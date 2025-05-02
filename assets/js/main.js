@@ -217,36 +217,42 @@ if (layoutBtns.length) {
 // modals
 const modalCls = ['.sort-modal', '.filter-modal'];
 
-modalCls.forEach(cls => {
-    const modal = document.querySelector(cls);
-    const modalOpenBtns = document.querySelectorAll(`${cls}__open`);
-    const modalCloseBtn = document.querySelector(`${cls} .modal-close`);
-    const modalBg = document.querySelector(`${cls} .modal-bg`);
-
-    const modalClose = () => {
-        bodyVisible();
-        modal.classList.remove('active');
-        modal.classList.add('end-active');
-        setTimeout(() => {
-            modal.classList.remove('end-active');
-        }, 400);
-    }
-
-    if (modalOpenBtns.length) {
-        modalOpenBtns.forEach(btn => {
-            btn.onclick = e => {
-                e.preventDefault();
-                modal.classList.add('active');
-                bodyHidden();
-            }
-        })
-    }
-
-    modalCloseBtn.onclick = () => modalClose();
-
-    modalBg.onclick = () => modalClose();
-
-})
+if (modalCls.length) {
+    modalCls.forEach(cls => {
+        const modal = document.querySelector(cls);
+        const modalOpenBtns = document.querySelectorAll(`${cls}__open`);
+        const modalCloseBtn = document.querySelector(`${cls} .modal-close`);
+        const modalBg = document.querySelector(`${cls} .modal-bg`);
+    
+        const modalClose = () => {
+            bodyVisible();
+            modal.classList.remove('active');
+            modal.classList.add('end-active');
+            setTimeout(() => {
+                modal.classList.remove('end-active');
+            }, 400);
+        }
+    
+        if (modalOpenBtns.length) {
+            modalOpenBtns.forEach(btn => {
+                btn.onclick = e => {
+                    e.preventDefault();
+                    modal.classList.add('active');
+                    bodyHidden();
+                }
+            })
+        }
+    
+        if (modalCloseBtn) {
+            modalCloseBtn.onclick = () => modalClose();
+        }
+    
+        if (modalBg) {
+            modalBg.onclick = () => modalClose();
+        }
+    
+    })
+}
 // modals end
 
 const homeText = document.querySelector('.home-text ul');
@@ -279,3 +285,23 @@ const watchedSwp = new Swiper('.watched .swiper', {
         prevEl: ".watched .swp-btn__prev",
     }
 })
+
+const catalogCard = document.querySelectorAll('.catalog-block__card');
+if (catalogCard.length) {
+    catalogCard.forEach(el => {
+        const moreBtn = el.querySelector('.more-btn');
+        const list = el.querySelector('ul');
+        const accBtn = el.querySelector('.text button');
+        const accBody = el.querySelector('.catalog-block__card-body');
+
+        moreBtn.onclick = () => {
+            list.classList.toggle('active');
+            moreBtn.classList.toggle('active');
+        }
+        
+        accBtn.onclick = () => {
+            accBody.classList.toggle('active');
+            accBtn.classList.toggle('active');
+        }
+    })
+}

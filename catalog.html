@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="#" class="header-logo mb">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <ul class="header-navs">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Производители</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-top__right">
+                        <div class="links">
+                            <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                            <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                        </div>
+                        <a href="#" class="btn-red">Заказать звонок</a>
+                        <button class="search-btn">
+                            <img src="./assets/images/zoom-icon.svg" alt="">
+                        </button>
+                        <a href="#" class="basket-link">
+                            <img src="./assets/images/basket-icon.svg" alt="">
+                            <span class="number">2</span>
+                        </a>
+                        <button class="bars">
+                            <img src="./assets/images/bars-black.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom__left">
+                        <a href="#" class="header-logo">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                        <div class="header-bottom__left-in">
+                            <button class="btn-red">
+                                <img src="./assets/images/bars.svg" alt="">
+                                <span>Каталог</span>
+                            </button>
+                            <div class="search-form">
+                                <input type="text" placeholder="Поиск">
+                                <button>
+                                    <img src="./assets/images/zoom-icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom__right">
+                        <div class="lang">
+                            <button class="lang-btn">
+                                <input type="text" value="RU" hidden>
+                                <img src="./assets/images/flag-ru.svg" alt="">
+                                <span>RU</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 1.20711L7.70711 6.5C7.31658 6.89053 6.68342 6.89052 6.29289 6.5L1 1.20711" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <ul class="lang-list">
+                                <li>
+                                    <img src="./assets/images/flag-ru.svg" alt="">
+                                    <span>RU</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/flag-en.svg" alt="">
+                                    <span>ENG</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/flag-kz.svg" alt="">
+                                    <span>KZ</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/heart-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/signal-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/basket-icon.svg" alt="">
+                            <span class="number">2</span>
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/user-icon.svg" alt="">
+                            <span>Войти</span>
+                        </a>
+                    </div>
+                    <div class="links mb">
+                        <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                        <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Menu -->
+        <section class="menu">
+            <div class="menu-head">
+                <div class="search-form">
+                    <input type="text" placeholder="Поиск">
+                    <button>
+                        <img src="./assets/images/zoom-icon.svg" alt="">
+                    </button>
+                </div>
+                <button class="menu-close">
+                    <img src="./assets/images/times.svg" alt="">
+                </button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content__head">
+                    <button class="catalog-btn">
+                        <span>Каталог</span>
+                        <img src="./assets/images/chevron-right.svg" alt="">
+                    </button>
+                    <ul class="menu-navs">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Производители</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-content__bottom">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/user-icon.svg" alt="">
+                                </span>
+                                <span>Вход/регистрация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/basket-icon.svg" alt="">
+                                </span>
+                                <span>Корзина</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/heart-icon.svg" alt="">
+                                </span>
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/signal-icon.svg" alt="">
+                                </span>
+                                <span>Сравнение товаров</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="links">
+                        <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                        <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn-red">Заказать звонок</a>
+                        <button class="lang-btn">
+                            <input type="text" value="RU" hidden>
+                            <img src="./assets/images/flag-ru.svg" alt="">
+                            <span>RU</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-catalog">
+                <button class="menu-catalog__close">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6665 8.5L3.99984 8.5M7.33317 12.5L3.80458 8.9714C3.54423 8.71106 3.54423 8.28894 3.80458 8.0286L7.33317 4.5" stroke="#999999" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>Назад</span>
+                </button>
+                <h3>Каталог</h3>
+                <ul>
+                    <li>
+                        <a href="#">AV-технологии</a>
+                    </li>
+                    <li>
+                        <a href="#">Активное оборудование</a>
+                    </li>
+                    <li>
+                        <a href="#">Беспроводные решения</a>
+                    </li>
+                    <li>
+                        <a href="#">Домофоны</a>
+                    </li>
+                    <li>
+                        <a href="#">Защита информации</a>
+                    </li>
+                    <li>
+                        <a href="#">Кабеленесущие системы</a>
+                    </li>
+                    <li>
+                        <a href="#">Кабель</a>
+                    </li>
+                    <li>
+                        <a href="#">Контроль и управление доступом</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Menu end -->
+
+        <section class="modal lang-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <button class="modal-close">
+                    <img src="./assets/images/times.svg" alt="">
+                </button>
+                <ul>
+                    <li>
+                        <img src="./assets/images/flag-ru.svg" alt="">
+                        <span>RU</span>
+                    </li>
+                    <li>
+                        <img src="./assets/images/flag-en.svg" alt="">
+                        <span>ENG</span>
+                    </li>
+                    <li>
+                        <img src="./assets/images/flag-kz.svg" alt="">
+                        <span>KZ</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <main>
+
+            <!-- Breadcrumb -->
+            <section class="breadcrumb">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                        <li>
+                            <a href="#">Кабеленесущие системы</a>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                        <li>
+                            <span>Кабель-каналы и аксессуары</span>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Breadcrumb end -->
+
+            <!-- Catalog block -->
+            <section class="catalog-block">
+                <div class="container">
+                    <h2 class="sec-title">Каталог</h2>
+                    <div class="catalog-block__card-wrap">
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="main-img">
+                                    <img src="./assets/images/catalog-card-1.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <a href="#">
+                                        <span>AV-технологии</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                    <li>AV-передача по IP-сети - системы NAV</li>
+                                    <li>Extron DTP</li>
+                                    <li>Extron XTP</li>
+                                    <li>LinkLicense</li>
+                                    <li>MTP- линейки с витой парой</li>
+                                    <li>Архитектурные решения</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Catalog block end -->
+
+            <!-- Contact -->
+            <section class="contact">
+                <div class="container contact-container">
+                    <div class="contact-form">
+                        <h2 class="sec-title">Подпишитесь <br>на рассылку новостей</h2>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail">
+                            <button class="btn-red">Подписаться</button>
+                            <p>Нажимая на кнопку «Подписаться», Вы соглашаетесь на обработку персональных данных</p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <h3>Последние новости</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                                <div>
+                                    <p>Google представит ИИ чипы для цод на основе Arm</p>
+                                    <span>11 апреля 2024</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./assets/images/news-card-2.png" alt="" class="main-img">
+                                <div>
+                                    <p>АНО ВТ призывает ограничить ввоз смартфонов, планшетов и ноутбуков любых иностранных</p>
+                                    <span>11 апреля 2024</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="more-btn">Смотреть все новости</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-left">
+                    <a href="#" class="footer-logo">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <ul>
+                        <li><b>Компания ТопСети</b> — поставки по параллельному импорту оборудования ведущих мировых производителей: структурированные кабельные системы CommScope Systimax (США), AV-технологии Extron (США), сетевые решения Extreme Networks (США) и многих других.</li>
+                        <li><b>15 лет опыта:</b> поставляем IT-оборудование с 2009 года</li>
+                        <li>><b>50 производителей:</b> любое оборудование под ваш проект на выгодных условиях</li>
+                        <li>><b>3000 выполненных проектов:</b> комплексные решения для коммерческих организаций, банков, госведомств, операторов связи</li>
+                    </ul>
+                </div>
+                <div class="footer-navs">
+                    <div class="footer-navs__item">
+                        <h3>Бренды</h3>
+                        <ul>
+                            <li>
+                                <a href="#">CommScope</a>
+                            </li>
+                            <li>
+                                <a href="#">Systimax</a>
+                            </li>
+                            <li>
+                                <a href="#">Extron</a>
+                            </li>
+                            <li>
+                                <a href="#">Panduit</a>
+                            </li>
+                            <li>
+                                <a href="#">AESP</a>
+                            </li>
+                            <li>
+                                <a href="#">AMP</a>
+                            </li>
+                            <li>
+                                <a href="#">Legrand</a>
+                            </li>
+                            <li>
+                                <a href="#">Cavel</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs__item">
+                        <h3>Категории</h3>
+                        <ul>
+                            <li>
+                                <a href="#">AV-технологии</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабель</a>
+                            </li>
+                            <li>
+                                <a href="#">Структурированные кабельные системы</a>
+                            </li>
+                            <li>
+                                <a href="#">Шкафы и стойки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs__item">
+                        <h3>Полезное</h3>
+                        <ul>
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Производители</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Условия заказа</a>
+                            </li>
+                            <li>
+                                <a href="#">Дилерам</a>
+                            </li>
+                            <li>
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">Карта сайта</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Контакты</h3>
+                    <div class="footer-right__item">
+                        <div>
+                            <h4>Единый номер</h4>
+                            <a href="tel:8 (800) 555-70-57">8 (800) 555-70-57</a>
+                        </div>
+                        <div>
+                            <h4>Почта</h4>
+                            <a href="mailto:sales@topseti.ru" target="_blank">sales@topseti.ru</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Российская Федерация</h4>
+                        <a href="tel:+7 (495) 646-7057">+7 (495) 646-7057</a>
+                        <p>123308, г. Москва, ул. Мневники, дом 6</p>
+                    </div>
+                    <div>
+                        <h4>Республика Казахстан</h4>
+                        <a href="tel:+7 (747) 825-5907">+7 (747) 825-5907</a>
+                        <p>г. Астана, ул. Абылай Хана, д. 6/1</p>
+                    </div>
+                    <div>
+                        <h4>Объединенные Арабские Эмираты</h4>
+                        <a href="tel:+9 (715)-0828-6224">+9 (715)-0828-6224</a>
+                        <p>UAE, Dubai, JBR, Al Habtour Tower, office 100</p>
+                    </div>
+                    <div class="networks">
+                        <h4>Социальные сети</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-3.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-4.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn">Напишите нам</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2009-2024 «ТопСети»</p>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
