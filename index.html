@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="#" class="header-logo mb">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <ul class="header-navs">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Производители</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-top__right">
+                        <div class="links">
+                            <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                            <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                        </div>
+                        <a href="#" class="btn-red">Заказать звонок</a>
+                        <button class="search-btn">
+                            <img src="./assets/images/zoom-icon.svg" alt="">
+                        </button>
+                        <a href="#" class="basket-link">
+                            <img src="./assets/images/basket-icon.svg" alt="">
+                            <span class="number">2</span>
+                        </a>
+                        <button class="bars">
+                            <img src="./assets/images/bars-black.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom__left">
+                        <a href="#" class="header-logo">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                        <div class="header-bottom__left-in">
+                            <button class="btn-red">
+                                <img src="./assets/images/bars.svg" alt="">
+                                <span>Каталог</span>
+                            </button>
+                            <div class="search-form">
+                                <input type="text" placeholder="Поиск">
+                                <button>
+                                    <img src="./assets/images/zoom-icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom__right">
+                        <div class="lang">
+                            <button class="lang-btn">
+                                <input type="text" value="RU" hidden>
+                                <img src="./assets/images/flag-ru.svg" alt="">
+                                <span>RU</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 1.20711L7.70711 6.5C7.31658 6.89053 6.68342 6.89052 6.29289 6.5L1 1.20711" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <ul class="lang-list">
+                                <li>
+                                    <img src="./assets/images/flag-ru.svg" alt="">
+                                    <span>RU</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/flag-en.svg" alt="">
+                                    <span>ENG</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/flag-kz.svg" alt="">
+                                    <span>KZ</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/heart-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/signal-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/basket-icon.svg" alt="">
+                            <span class="number">2</span>
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/user-icon.svg" alt="">
+                            <span>Войти</span>
+                        </a>
+                    </div>
+                    <div class="links mb">
+                        <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                        <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Menu -->
+        <section class="menu">
+            <div class="menu-head">
+                <div class="search-form">
+                    <input type="text" placeholder="Поиск">
+                    <button>
+                        <img src="./assets/images/zoom-icon.svg" alt="">
+                    </button>
+                </div>
+                <button class="menu-close">
+                    <img src="./assets/images/times.svg" alt="">
+                </button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content__head">
+                    <button class="catalog-btn">
+                        <span>Каталог</span>
+                        <img src="./assets/images/chevron-right.svg" alt="">
+                    </button>
+                    <ul class="menu-navs">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Производители</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-content__bottom">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/user-icon.svg" alt="">
+                                </span>
+                                <span>Вход/регистрация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/basket-icon.svg" alt="">
+                                </span>
+                                <span>Корзина</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/heart-icon.svg" alt="">
+                                </span>
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/signal-icon.svg" alt="">
+                                </span>
+                                <span>Сравнение товаров</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="links">
+                        <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                        <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn-red">Заказать звонок</a>
+                        <button class="lang-btn">
+                            <input type="text" value="RU" hidden>
+                            <img src="./assets/images/flag-ru.svg" alt="">
+                            <span>RU</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-catalog">
+                <button class="menu-catalog__close">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6665 8.5L3.99984 8.5M7.33317 12.5L3.80458 8.9714C3.54423 8.71106 3.54423 8.28894 3.80458 8.0286L7.33317 4.5" stroke="#999999" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>Назад</span>
+                </button>
+                <h3>Каталог</h3>
+                <ul>
+                    <li>
+                        <a href="#">AV-технологии</a>
+                    </li>
+                    <li>
+                        <a href="#">Активное оборудование</a>
+                    </li>
+                    <li>
+                        <a href="#">Беспроводные решения</a>
+                    </li>
+                    <li>
+                        <a href="#">Домофоны</a>
+                    </li>
+                    <li>
+                        <a href="#">Защита информации</a>
+                    </li>
+                    <li>
+                        <a href="#">Кабеленесущие системы</a>
+                    </li>
+                    <li>
+                        <a href="#">Кабель</a>
+                    </li>
+                    <li>
+                        <a href="#">Контроль и управление доступом</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Menu end -->
+
+        <section class="modal lang-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <button class="modal-close">
+                    <img src="./assets/images/times.svg" alt="">
+                </button>
+                <ul>
+                    <li>
+                        <img src="./assets/images/flag-ru.svg" alt="">
+                        <span>RU</span>
+                    </li>
+                    <li>
+                        <img src="./assets/images/flag-en.svg" alt="">
+                        <span>ENG</span>
+                    </li>
+                    <li>
+                        <img src="./assets/images/flag-kz.svg" alt="">
+                        <span>KZ</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <main>
+
+            <!-- Breadcrumb -->
+            <section class="breadcrumb">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                        <li>
+                            <a href="#">Каталог</a>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                        <li>
+                            <a href="#">Кабеленесущие системы</a>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                        <li>
+                            <span>Кабель-каналы и аксессуары</span>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Breadcrumb end -->
+
+            <!-- Sort modal -->
+            <section class="modal sort-modal">
+                <div class="modal-bg"></div>
+                <div class="modal-content">
+                    <button class="modal-close">
+                        <img src="./assets/images/times.svg" alt="">
+                    </button>
+                    <ul>
+                        <li>
+                            <a href="#" class="active">
+                                <span>цене</span>
+                                <img src="./assets/images/arrow-down.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>артикулу</span>
+                                <img src="./assets/images/arrow-down.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>наименованию</span>
+                                <img src="./assets/images/arrow-down.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>новизне</span>
+                                <img src="./assets/images/arrow-down.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Sort modal end -->
+
+            <!-- Filter modal -->
+            <section class="modal filter-modal">
+                <div class="modal-bg"></div>
+                <div class="modal-content">
+                    <div class="modal-content__head">
+                        <button class="modal-close">
+                            <img src="./assets/images/arrow-left-grey.svg" alt="">
+                        </button>
+                        <h3>Фильтры</h3>
+                        <a href="#" class="clear-btn">Сбросить</a>
+                    </div>
+                    <div class="modal-content__body">
+                        <div class="accordion">
+                            <div class="accordion-btn">
+                                <span>Категория</span>
+                                <img src="./assets/images/chevron-down.svg" alt="">
+                            </div>
+                            <div class="accordion-body__wrap">
+                                <ul class="accordion-body">
+                                    <li class="form-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                        <p>
+                                            Заглушки
+                                            <span>70</span>
+                                        </p>
+                                        <span class="icon">
+                                            <img src="./assets/images/check-icon.svg" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="form-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                        <p>
+                                            Кабель-каналы и миниплинтусы
+                                            <span>70</span>
+                                        </p>
+                                        <span class="icon">
+                                            <img src="./assets/images/check-icon.svg" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="form-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                        <p>
+                                            Крышки
+                                            <span>70</span>
+                                        </p>
+                                        <span class="icon">
+                                            <img src="./assets/images/check-icon.svg" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="form-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                        <p>
+                                            Прочие аксессуары
+                                            <span>70</span>
+                                        </p>
+                                        <span class="icon">
+                                            <img src="./assets/images/check-icon.svg" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="form-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                        <p>
+                                            Разделители и перегородки
+                                            <span>70</span>
+                                        </p>
+                                        <span class="icon">
+                                            <img src="./assets/images/check-icon.svg" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="form-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                        <p>
+                                            Рамки и суппорты
+                                            <span>70</span>
+                                        </p>
+                                        <span class="icon">
+                                            <img src="./assets/images/check-icon.svg" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="form-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                        <p>
+                                            Соединители и накладки
+                                            <span>70</span>
+                                        </p>
+                                        <span class="icon">
+                                            <img src="./assets/images/check-icon.svg" alt="">
+                                        </span>
+                                    </li>
+                                    <li class="form-checkbox">
+                                        <input type="checkbox" name="" id="">
+                                        <p>
+                                            Углы и повороты
+                                            <span>70</span>
+                                        </p>
+                                        <span class="icon">
+                                            <img src="./assets/images/check-icon.svg" alt="">
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h3>Цена</h3>
+                        <div class="form_range">
+                            <div class="form_range__inp">
+                                <div class="line"></div>
+                                <input value="3000" min="0" max="20000" step="1" type="range" />
+                                <input value="12000" min="0" max="20000" step="1" type="range" />
+                            </div>
+                            <div class="form_range__val">
+                                <div class="form_range__val_item">
+                                    <span>от</span>
+                                    <input class="val" type="number" value="0" min="0" max="20000" step="1">
+                                </div>
+                                <div class="form_range__val_item">
+                                    <span>до</span>
+                                    <input class="val" type="number" value="0" min="0" max="20000" step="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">
+                                <span>Бренд</span>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 10.5L12.7071 15.7929C12.3166 16.1834 11.6834 16.1834 11.2929 15.7929L6 10.5" stroke="#121212" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <div class="accordion-body__wrap">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li class="form-checkbox">
+                                            <input type="checkbox" checked name="" id="">
+                                            <span class="icon">
+                                                <img src="./assets/images/check-icon.svg" alt="">
+                                            </span>
+                                            <p>Legrand</p>
+                                        </li>
+                                        <li class="form-checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="icon">
+                                                <img src="./assets/images/check-icon.svg" alt="">
+                                            </span>
+                                            <p>IEK</p>
+                                        </li>
+                                        <li class="form-checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="icon">
+                                                <img src="./assets/images/check-icon.svg" alt="">
+                                            </span>
+                                            <p>BAKS</p>
+                                        </li>
+                                        <li class="form-checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="icon">
+                                                <img src="./assets/images/check-icon.svg" alt="">
+                                            </span>
+                                            <p>OSTEC</p>
+                                        </li>
+                                        <li class="form-checkbox">
+                                            <input type="checkbox" name="" id="">
+                                            <span class="icon">
+                                                <img src="./assets/images/check-icon.svg" alt="">
+                                            </span>
+                                            <p>Legrand</p>
+                                        </li>
+                                    </ul>
+                                    <a href="#">показать ещё 12</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-content__foot">
+                        <a href="#" class="btn-red">Применить фильтр</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Filter modal end -->
+
+            <!-- Home -->
+            <section class="home">
+                <div class="container home-container">
+                    <h2 class="sec-title">Кабель-каналы и аксессуары</h2>
+                    <div class="home-content">
+                        <div class="home-left">
+                            <div class="home-left__item">
+                                <h3>Категория</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Заглушки <span>70</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Кабель-каналы и миниплинтусы <span>160</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Крышки <span>70</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Прочие аксессуары <span>70</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Разделители и перегородки <span>70</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Рамки и суппорты <span>70</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Соединители и накладки <span>70</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Углы и повороты <span>70</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="home-left__item">
+                                <h3>Цена</h3>
+                                <div class="form_range">
+                                    <div class="form_range__inp">
+                                        <div class="line"></div>
+                                        <input value="3000" min="0" max="20000" step="1" type="range" />
+                                        <input value="12000" min="0" max="20000" step="1" type="range" />
+                                    </div>
+                                    <div class="form_range__val">
+                                        <div class="form_range__val_item">
+                                            <span>от</span>
+                                            <input class="val" type="number" value="0" min="0" max="20000" step="1">
+                                        </div>
+                                        <div class="form_range__val_item">
+                                            <span>до</span>
+                                            <input class="val" type="number" value="0" min="0" max="20000" step="1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion active">
+                                    <button class="accordion-btn">
+                                        <span>Бренд</span>
+                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18 10.5L12.7071 15.7929C12.3166 16.1834 11.6834 16.1834 11.2929 15.7929L6 10.5" stroke="#121212" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </button>
+                                    <div class="accordion-body__wrap">
+                                        <div class="accordion-body">
+                                            <ul>
+                                                <li class="form-checkbox">
+                                                    <input type="checkbox" checked name="" id="">
+                                                    <span class="icon">
+                                                        <img src="./assets/images/check-icon.svg" alt="">
+                                                    </span>
+                                                    <p>Legrand</p>
+                                                </li>
+                                                <li class="form-checkbox">
+                                                    <input type="checkbox" name="" id="">
+                                                    <span class="icon">
+                                                        <img src="./assets/images/check-icon.svg" alt="">
+                                                    </span>
+                                                    <p>IEK</p>
+                                                </li>
+                                                <li class="form-checkbox">
+                                                    <input type="checkbox" name="" id="">
+                                                    <span class="icon">
+                                                        <img src="./assets/images/check-icon.svg" alt="">
+                                                    </span>
+                                                    <p>BAKS</p>
+                                                </li>
+                                                <li class="form-checkbox">
+                                                    <input type="checkbox" name="" id="">
+                                                    <span class="icon">
+                                                        <img src="./assets/images/check-icon.svg" alt="">
+                                                    </span>
+                                                    <p>OSTEC</p>
+                                                </li>
+                                                <li class="form-checkbox">
+                                                    <input type="checkbox" name="" id="">
+                                                    <span class="icon">
+                                                        <img src="./assets/images/check-icon.svg" alt="">
+                                                    </span>
+                                                    <p>Legrand</p>
+                                                </li>
+                                            </ul>
+                                            <a href="#">показать ещё 12</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-grey">Очистить фильтр</a>
+                            </div>
+                        </div>
+                        <div class="home-right">
+                            <div class="settings">
+                                <div class="settings-mb">
+                                    <p>По:</p>
+                                    <a href="#" class="sort-modal__open">
+                                        <span>цене</span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 12.6667L8 3.99999M4 7.33332L7.5286 3.80473C7.78895 3.54438 8.21106 3.54438 8.4714 3.80473L12 7.33332" stroke="#111111" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="settings-left">
+                                    <p>Сортировать по:</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="active">
+                                                <span>цене</span>
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 12.6667L8 3.99999M4 7.33332L7.5286 3.80473C7.78895 3.54438 8.21106 3.54438 8.4714 3.80473L12 7.33332" stroke="#111111" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>артикулу</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>наименованию</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>новизне</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="settings-right">
+                                    <button class="active">
+                                        <img src="./assets/images/sort-icon-1.svg" alt="">
+                                        <img src="./assets/images/sort-icon-1-active.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="./assets/images/sort-icon-2.svg" alt="">
+                                        <img src="./assets/images/sort-icon-2-active.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="./assets/images/sort-icon-3.svg" alt="">
+                                        <img src="./assets/images/sort-icon-3-active.svg" alt="">
+                                    </button>
+                                    <a href="#" class="filter-btn filter-modal__open">
+                                        <img src="./assets/images/filter-icon.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="home-cards">
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-1.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus Суппорт 2 поста для DLP кабель-каналов с шириной крышки 130 мм, 010924</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-2.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus <br> Крышка 180 мм</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-2.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus <br> Крышка 180 мм</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-3.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus Суппорт 2 поста для DLP кабель-каналов с шириной крышки 130 мм, 010924</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-1.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus Суппорт 2 поста для DLP кабель-каналов с шириной крышки 130 мм, 010924</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-1.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus Суппорт 2 поста для DLP кабель-каналов с шириной крышки 130 мм, 010924</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-1.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus Суппорт 2 поста для DLP кабель-каналов с шириной крышки 130 мм, 010924</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-1.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus Суппорт 2 поста для DLP кабель-каналов с шириной крышки 130 мм, 010924</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-1.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus Суппорт 2 поста для DLP кабель-каналов с шириной крышки 130 мм, 010924</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <a href="#" class="btn btn-prev">
+                                    <img src="./assets/images/arrow-left-red.svg" alt="">
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="active">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn btn-next">
+                                    <img src="./assets/images/arrow-right-red.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="more-link">
+                                <a href="#">Показать ещё</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home end -->
+
+            <!-- Home text -->
+            <section class="home-text">
+                <div class="container home-text__container">
+                    <div class="line"></div>
+                    <ul>
+                        <li>При монтаже электропроводки не всегда есть возможность проложить кабель внутри стены, поэтому для его сокрытия используют кабель-канал.</li>
+                        <li>Такой пластиковый короб позволяет защитить провод от механических повреждений, придать более эстетичный вид помещению, а также обеспечить пожаробезопасность.</li>
+                        <li>В кабель-канале можно проложить силовой (электрический), оптоволоконный, коаксиальный и другие типы кабелей.</li>
+                        <li>При необходимости внести изменения в кабельную систему, удлинить или разветвить провод, это легко реализовать, так как короба различных производителей IEK (ИЭК), Legrand DLP, T.Plast, Элекор, DKC (ДКС) имеют крышку, открыв которую, можно извлечь кабель.</li>
+                        <li>Пластиковый кабель-канал изготовлен из поливинилхлорида (ПВХ), в виду чего он гибкий и легко крепится к стене или полу. Монтаж выполняется при помощи клея, саморезов или других крепежных деталей.</li>
+                        <li>Напольный короб зачастую имеет на дне или в задней стенке перфорацию для крепления.</li>
+                        <li>Размерный ряд реализуемых кабель-каналов очень широк (от 10х7 до 100х60 мм), что позволяет приобрести наиболее подходящий для конкретного случая.</li>
+                        <li>Чтобы определить требуемую модель, также необходимо знать площадь полезного сечения. Для этого многие производители издают каталоги, содержащие данные размеры.</li>
+                    </ul>
+                    <button>
+                        <span>Показать полностью</span>
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 1.20715L7.70711 6.50005C7.31658 6.89057 6.68342 6.89057 6.29289 6.50005L1 1.20715" stroke="#5D98A4" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <!-- Home text end -->
+
+            <!-- Watched -->
+            <section class="watched">
+                <div class="container">
+                    <div class="watched-head">
+                        <h2 class="sec-title">Вы смотрели</h2>
+                        <div class="swp-btn">
+                            <button class="swp-btn__prev">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 12L6 12M11 18L5.70711 12.7071C5.31658 12.3166 5.31658 11.6834 5.70711 11.2929L11 6" stroke="#C91517" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <button class="swp-btn__next">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12L18 12M13 6L18.2929 11.2929C18.6834 11.6834 18.6834 12.3166 18.2929 12.7071L13 18" stroke="#C91517" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-1.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus Суппорт 2 поста для DLP кабель-каналов с шириной крышки 130 мм, 010924</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-2.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus <br> Крышка 180 мм</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-2.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus <br> Крышка 180 мм</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-card">
+                                    <div class="product-card__head">
+                                        <div class="main-img">
+                                            <img src="./assets/images/product-card-2.png" alt="">
+                                        </div>
+                                        <div class="product-card__head-text">
+                                            <div class="product-card__article">
+                                                <span>Артикул:</span>
+                                                032801
+                                            </div>
+                                            <div class="product-card__title">Legrand DLPlus <br> Крышка 180 мм</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-card__foot">
+                                        <div class="product-card__price">805.78 руб.</div>
+                                        <button class="like-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_135_286)">
+                                                    <path d="M17.5048 3C16.3788 3.01751 15.2773 3.33185 14.3116 3.91127C13.3459 4.49069 12.5502 5.31467 12.0048 6.3C11.4595 5.31467 10.6638 4.49069 9.69808 3.91127C8.73238 3.33185 7.63089 3.01751 6.50484 3C4.70978 3.07799 3.01855 3.86325 1.80062 5.18423C0.582701 6.50521 -0.0629094 8.25453 0.0048411 10.05C0.0048411 14.597 4.79084 19.563 8.80484 22.93C9.70106 23.6831 10.8342 24.096 12.0048 24.096C13.1755 24.096 14.3086 23.6831 15.2048 22.93C19.2188 19.563 24.0048 14.597 24.0048 10.05C24.0726 8.25453 23.427 6.50521 22.2091 5.18423C20.9911 3.86325 19.2999 3.07799 17.5048 3Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <button class="signal-btn">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2003_750)">
+                                                    <path d="M12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9V21C9 21.7956 9.31607 22.5587 9.87868 23.1213C10.4413 23.6839 11.2044 24 12 24C12.7956 24 13.5587 23.6839 14.1213 23.1213C14.6839 22.5587 15 21.7956 15 21V9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6Z" fill="#999999"/>
+                                                    <path d="M21 0C20.2044 0 19.4413 0.31607 18.8787 0.87868C18.3161 1.44129 18 2.20435 18 3V21C18 21.7956 18.3161 22.5587 18.8787 23.1213C19.4413 23.6839 20.2044 24 21 24C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V3C24 2.20435 23.6839 1.44129 23.1213 0.87868C22.5587 0.31607 21.7956 0 21 0Z" fill="#999999"/>
+                                                    <path d="M3 12C2.20435 12 1.44129 12.3161 0.87868 12.8787C0.31607 13.4413 0 14.2044 0 15L0 21C0 21.7956 0.31607 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24C3.79565 24 4.55871 23.6839 5.12132 23.1213C5.68393 22.5587 6 21.7956 6 21V15C6 14.2044 5.68393 13.4413 5.12132 12.8787C4.55871 12.3161 3.79565 12 3 12Z" fill="#999999"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <a href="#" class="basket-btn">
+                                            <img src="./assets/images/basket-icon-white.svg" alt="">
+                                            <span>В корзину</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Watched end -->
+
+            <!-- Contact -->
+            <section class="contact">
+                <div class="container contact-container">
+                    <div class="contact-form">
+                        <h2 class="sec-title">Подпишитесь <br>на рассылку новостей</h2>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-mail">
+                            <button class="btn-red">Подписаться</button>
+                            <p>Нажимая на кнопку «Подписаться», Вы соглашаетесь на обработку персональных данных</p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <h3>Последние новости</h3>
+                        <ul>
+                            <li>
+                                <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                                <div>
+                                    <p>Google представит ИИ чипы для цод на основе Arm</p>
+                                    <span>11 апреля 2024</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./assets/images/news-card-2.png" alt="" class="main-img">
+                                <div>
+                                    <p>АНО ВТ призывает ограничить ввоз смартфонов, планшетов и ноутбуков любых иностранных</p>
+                                    <span>11 апреля 2024</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="more-btn">Смотреть все новости</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-left">
+                    <a href="#" class="footer-logo">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <ul>
+                        <li><b>Компания ТопСети</b> — поставки по параллельному импорту оборудования ведущих мировых производителей: структурированные кабельные системы CommScope Systimax (США), AV-технологии Extron (США), сетевые решения Extreme Networks (США) и многих других.</li>
+                        <li><b>15 лет опыта:</b> поставляем IT-оборудование с 2009 года</li>
+                        <li>><b>50 производителей:</b> любое оборудование под ваш проект на выгодных условиях</li>
+                        <li>><b>3000 выполненных проектов:</b> комплексные решения для коммерческих организаций, банков, госведомств, операторов связи</li>
+                    </ul>
+                </div>
+                <div class="footer-navs">
+                    <div class="footer-navs__item">
+                        <h3>Бренды</h3>
+                        <ul>
+                            <li>
+                                <a href="#">CommScope</a>
+                            </li>
+                            <li>
+                                <a href="#">Systimax</a>
+                            </li>
+                            <li>
+                                <a href="#">Extron</a>
+                            </li>
+                            <li>
+                                <a href="#">Panduit</a>
+                            </li>
+                            <li>
+                                <a href="#">AESP</a>
+                            </li>
+                            <li>
+                                <a href="#">AMP</a>
+                            </li>
+                            <li>
+                                <a href="#">Legrand</a>
+                            </li>
+                            <li>
+                                <a href="#">Cavel</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs__item">
+                        <h3>Категории</h3>
+                        <ul>
+                            <li>
+                                <a href="#">AV-технологии</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабель</a>
+                            </li>
+                            <li>
+                                <a href="#">Структурированные кабельные системы</a>
+                            </li>
+                            <li>
+                                <a href="#">Шкафы и стойки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs__item">
+                        <h3>Полезное</h3>
+                        <ul>
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Производители</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Условия заказа</a>
+                            </li>
+                            <li>
+                                <a href="#">Дилерам</a>
+                            </li>
+                            <li>
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">Карта сайта</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Контакты</h3>
+                    <div class="footer-right__item">
+                        <div>
+                            <h4>Единый номер</h4>
+                            <a href="tel:8 (800) 555-70-57">8 (800) 555-70-57</a>
+                        </div>
+                        <div>
+                            <h4>Почта</h4>
+                            <a href="mailto:sales@topseti.ru" target="_blank">sales@topseti.ru</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Российская Федерация</h4>
+                        <a href="tel:+7 (495) 646-7057">+7 (495) 646-7057</a>
+                        <p>123308, г. Москва, ул. Мневники, дом 6</p>
+                    </div>
+                    <div>
+                        <h4>Республика Казахстан</h4>
+                        <a href="tel:+7 (747) 825-5907">+7 (747) 825-5907</a>
+                        <p>г. Астана, ул. Абылай Хана, д. 6/1</p>
+                    </div>
+                    <div>
+                        <h4>Объединенные Арабские Эмираты</h4>
+                        <a href="tel:+9 (715)-0828-6224">+9 (715)-0828-6224</a>
+                        <p>UAE, Dubai, JBR, Al Habtour Tower, office 100</p>
+                    </div>
+                    <div class="networks">
+                        <h4>Социальные сети</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-3.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-4.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn">Напишите нам</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2009-2024 «ТопСети»</p>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

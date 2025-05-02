@@ -1,0 +1,22 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$font-open-sans: "Open Sans", sans-serif;
+$font-inter: "Inter", sans-serif;
+// Fonts end
+
+// Colors
+// Colors end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
