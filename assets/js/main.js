@@ -47,6 +47,7 @@ window.addEventListener('scroll', () => {
 const bars = document.querySelector('.header .bars');
 const menu = document.querySelector('.menu');
 const menuClose = document.querySelector('.menu .menu-close');
+const catalogBtn = document.querySelector('.catalog-links__wrap .btn-red');
 
 bars.onclick = () => {
     menu.classList.add('active');
@@ -66,6 +67,14 @@ catalogOpenMb.onclick = () => {
 
 catalogCloseMb.onclick = () => {
     catalogMb.classList.remove('active');
+}
+
+catalogBtn.onclick = e => {
+    if (window.innerWidth < 1050) {
+        e.preventDefault();
+        menu.classList.add('active');
+        catalogMb.classList.add('active');
+    }
 }
 
 const langModal = document.querySelector('.lang-modal');
