@@ -1244,11 +1244,22 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                         align-items: flex-start;
                         gap: 8px;
                         margin-bottom: 16px;
+
+                        
+                        &:not(.active) {
+                            li:nth-child(n+6) {
+                                display: none !important;
+                            }
+                        }
                     }
 
                     a {
                         font-size: 14px;
                         color: #999999;
+
+                        &.hidden {
+                            display: none;
+                        }
                     }
                 }
 

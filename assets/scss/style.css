@@ -1176,9 +1176,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   gap: 8px;
   margin-bottom: 16px;
 }
+.home-left__item .accordion-body ul:not(.active) li:nth-child(n+6) {
+  display: none !important;
+}
 .home-left__item .accordion-body a {
   font-size: 14px;
   color: #999999;
+}
+.home-left__item .accordion-body a.hidden {
+  display: none;
 }
 .home-left__item .accordion.active .accordion-btn svg, .home-left__item .accordion.active .accordion-btn img {
   transform: rotateZ(180deg);

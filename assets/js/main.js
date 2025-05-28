@@ -123,6 +123,21 @@ if (accordion.length) {
             item.classList.toggle('active');
             accBody.style.maxHeight = accBody.style.maxHeight ? null : accBody.scrollHeight + 'px';
         });
+
+        const checkboxList = item.querySelector('.accordion-body ul');
+        const showBtn = item.querySelector('.accordion-body a.more-btn');
+        console.log(showBtn);
+
+        if (checkboxList && showBtn) {
+            showBtn.onclick = e => {
+                e.preventDefault();
+                checkboxList.classList.add('active');
+                showBtn.classList.add('hidden');
+                setTimeout(() => {
+                    accBody.style.maxHeight = accBody.scrollHeight + 'px';
+                }, 100);
+            }
+        }
     });
 }
 
