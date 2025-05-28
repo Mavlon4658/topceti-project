@@ -1773,9 +1773,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .filter-modal .modal-content__body .accordion-body ul li {
   flex-direction: row-reverse;
 }
+.filter-modal .modal-content__body .accordion-body ul:not(.active) li:nth-child(n+6) {
+  display: none !important;
+}
 .filter-modal .modal-content__body .accordion-body a {
   color: #999999;
   font-size: 14px;
+}
+.filter-modal .modal-content__body .accordion-body a.hidden {
+  display: none;
 }
 .filter-modal .modal-content__body .accordion.active .accordion-btn svg, .filter-modal .modal-content__body .accordion.active .accordion-btn img {
   transform: rotateZ(180deg);

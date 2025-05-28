@@ -1943,11 +1943,21 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                             flex-direction: row-reverse;
         
                         }
+
+                        &:not(.active) {
+                            li:nth-child(n+6) {
+                                display: none !important;
+                            }
+                        }
                     }
         
                     a {
                         color: #999999;
                         font-size: 14px;
+
+                        &.hidden {
+                            display: none;
+                        }
                     }
                 }
 
