@@ -53,6 +53,25 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     @include media(1050) {
         font-size: 24px;
     }
+
+    &__2 {
+        font-weight: 700;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        @include media(992) {
+            font-size: 18px;
+        }
+
+        span {
+            height: 2px;
+            width: 64px;
+            background: #C91517;
+        }
+    }
 }
 
 .form {
@@ -2638,5 +2657,554 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             }
         }
     }
+
+    &.new-catalog {
+        .sec-title {
+            text-align: center;
+        }
+
+        .catalog-block__card {
+            min-height: 227px;
+
+            @include media(1050) {
+                min-height: inherit;
+            }
+
+            &-wrap {
+                align-items: stretch;
+            }
+
+            ul {
+                &:not(.active) li:nth-child(n+6) {
+                    display: none;
+                } 
+            }
+        }
+
+        .more-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 32px;
+
+            @include media(992) {
+                padding-top: 24px;
+            }
+
+            .btn-red {
+                max-width: 397px;
+                width: 100%;
+            }
+        }
+    }
 }
 // Catalog block end
+
+// About
+.about {
+    margin-bottom: 65px;
+
+    @include media(992) {
+        margin-bottom: 56px;
+    }
+
+    &-head {
+        display: flex;
+        gap: 8px;
+        margin: 40px 0 16px;
+
+        @include media(992) {
+            margin: 24px 0 37px;
+        }
+    
+        b {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 140%;
+        }
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    &-card {
+        background: #f5f5f5;
+        border-radius: 8px;
+        padding: 40px 24px;
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+
+        @include media(768) {
+            gap: 8px;
+            padding: 16px;
+            flex-direction: column;
+        }
+
+        &__wrap {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+
+            @include media(992) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .icon {
+            flex-shrink: 0;
+
+            @include media(768) {
+                width: 32px;
+            }
+        }
+
+        &__text {
+            padding-top: 7px;
+
+            @include media(768) {
+                padding: 0;
+            }
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 16px;
+
+            @include media(768) {
+                font-size: 16px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            @include media(768) {
+                gap: 4px;
+            }
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 16px;
+
+            @include media(768) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+// About end
+
+// Countries
+.countries {
+    background: #f5f5f5;
+    margin-bottom: 65px;
+    padding: 65px 0;
+
+    @include media(992) {
+        padding: 56px 0;
+        margin-bottom: 56px;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+
+        @include media(992) {
+            gap: 40px;
+        }
+    }
+
+    &-card {
+        width: 100%;
+        border-radius: 8px;
+        padding: 40px 24px 40px 40px;
+        background: #FFF;
+        position: relative;
+        z-index: 1;
+
+        @include media(992) {
+            padding: 40px 16px;
+        }
+
+        .bg-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            z-index: -1;
+
+            @include media(992) {
+                display: none;
+                height: auto;
+            }
+
+            &.sm {
+                display: none;
+
+                @include media(992) {
+                    display: block;
+                }
+            }
+        }
+
+        .sec-title__2 {
+            margin-bottom: 32px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            @include media(992) {
+                gap: 12px;
+            }
+        }
+
+        li {
+            display: flex;
+            align-items: end;
+            gap: 8px;
+
+            @include media(992) {
+                gap: 4px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        b {
+            width: 204px;
+            flex-shrink: 0;
+            font-weight: 600;
+            font-size: 16px;
+
+            @include media(992) {
+                font-size: 12px;
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}
+// Countries end
+
+// New home
+.new-home {
+    padding: 30px 0 65px;
+    
+    @include media(992) {
+        padding: 0 0 56px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+        @include media(768) {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &__content {
+        max-width: 717px;
+        width: 100%;
+        padding-left: 107px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        @include media(1100) {
+            padding-left: 0;
+        }
+
+        h2 {
+            position: relative;
+            margin-bottom: 40px;
+
+            @include media(768) {
+                margin-bottom: 27px;
+            }
+
+            span {
+                position: absolute;
+                bottom: -3px;
+                right: 0;
+                width: 100vw;
+                min-width: 100vw;
+                height: 3px;
+                background: #C91517;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 140%;
+        }
+    }
+
+    .main-img {
+        width: 431px;
+        flex-shrink: 0;
+
+        @include media(992) {
+            width: 350px;
+        }
+
+        @include media(768) {
+            width: 308px;
+        }
+
+        &__2 {
+            flex-shrink: 0;
+            width: 263px;
+            margin-right: 137px;
+
+            @include media(1100) {
+                margin: 0;
+            }
+
+            @include media(768) {
+                width: 299px;
+            }
+        }
+    }
+}
+// New home end
+
+// About order
+.about-order {
+    margin-bottom: 65px;
+
+    @include media(992) {
+        margin-bottom: 56px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+
+        @include media(992) {
+            gap: 56px;
+        }
+    }
+
+    &__card {
+        background: #f5f5f5;
+        padding: 40px 24px;
+
+        @include media(992) {
+            padding: 56px 16px;
+        }
+    }
+
+    ul {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            padding-left: 14px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                border-radius: 50%;
+                background: #5d98a4;
+                width: 6px;
+                height: 6px;
+                left: 0;
+                top: 8px;
+            }
+        }
+    }
+
+    .text-1 {
+        gap: 8px;
+
+        li {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    .text-2 {
+        gap: 24px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            &::before {
+                top: 9.5px;
+            }
+        }
+
+        b {
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+// About order end
+
+// Extron 
+.extron {
+    margin-bottom: 80px;
+
+    @include media(992) {
+        margin-bottom: 56px;
+    }
+
+    &-container {
+        max-width: 826px;
+    }
+
+    .sec-title {
+        text-align: center;
+        margin-bottom: 40px;
+
+        @include media(768) {
+            text-align: left;
+        }
+    }
+
+    &-content {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+
+        @include media(768) {
+            gap: 56px;
+        }
+    }
+
+    .descriptioin {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    h4 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+
+        @include media(992) {
+            font-size: 16px;
+        }
+    }
+    .list-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px 32px;
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-top: 32px;
+
+        @include media(768) {
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 24px;
+        }
+
+        li {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #121212;
+        }
+    }
+
+    .main-img {
+        height: 451px;
+        width: 100%;
+        object-fit: cover;
+
+        @include media(768) {
+            height: 183px;
+        }
+    }
+
+    .list-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .block-1 {
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 4px;
+            background: #c91517;
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 140%;
+        
+        @include media(992) {
+            font-size: 24px;
+        }
+    }
+
+    .list-3 {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .block-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 40px;
+
+        @include media(992) {
+            padding-top: 0;
+            gap: 24px;
+        }
+
+        .certificate-img {
+            width: 450px;
+
+            @include media(992) {
+                width: 100%;
+            }
+        }
+    }
+}
+// Extron end

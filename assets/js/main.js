@@ -318,9 +318,11 @@ if (catalogCard.length) {
         const accBtn = el.querySelector('.text button');
         const accBody = el.querySelector('.catalog-block__card-body');
 
-        moreBtn.onclick = () => {
-            list.classList.toggle('active');
-            moreBtn.classList.toggle('active');
+        if (moreBtn) {
+            moreBtn.onclick = () => {
+                list.classList.toggle('active');
+                moreBtn.classList.toggle('active');
+            }
         }
         
         accBtn.onclick = () => {

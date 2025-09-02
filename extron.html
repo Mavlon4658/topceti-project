@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="#" class="header-logo mb">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <ul class="header-navs">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Производители</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-top__right">
+                        <div class="links">
+                            <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                            <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                        </div>
+                        <a href="#" class="btn-red">Заказать звонок</a>
+                        <button class="search-btn">
+                            <img src="./assets/images/zoom-icon.svg" alt="">
+                        </button>
+                        <a href="#" class="basket-link">
+                            <img src="./assets/images/basket-icon.svg" alt="">
+                            <span class="number">2</span>
+                        </a>
+                        <button class="bars">
+                            <img src="./assets/images/bars-black.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom__left">
+                        <a href="#" class="header-logo">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                        <div class="header-bottom__left-in">
+                            <div class="catalog-links__wrap">
+                                <button class="btn-red">
+                                    <img src="./assets/images/bars.svg" alt="">
+                                    <span>Каталог</span>
+                                </button>
+                                <ul class="catalog-links">
+                                    <li>
+                                        <a href="#" class="catalog-links__item">AV-технологии</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Активное оборудование</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Домофоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Защита информации</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Кабеленесущие системы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Кабель</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Контроль и управление доступом </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Охранное видеонаблюдение</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Полупроводники</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Светотехнические изделия</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Системы охранно-пожарной сигнализации</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Структурированные кабельные системы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Шкафы и стойки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Щитовое оборудование </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Электротехническое оборудование</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search-form">
+                                <input type="text" placeholder="Поиск">
+                                <button>
+                                    <img src="./assets/images/zoom-icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom__right">
+                        <div class="lang">
+                            <button class="lang-btn">
+                                <input type="text" value="RU" hidden>
+                                <img src="./assets/images/flag-ru.svg" alt="">
+                                <span>RU</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 1.20711L7.70711 6.5C7.31658 6.89053 6.68342 6.89052 6.29289 6.5L1 1.20711" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <ul class="lang-list">
+                                <li>
+                                    <img src="./assets/images/flag-ru.svg" alt="">
+                                    <span>RU</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/flag-en.svg" alt="">
+                                    <span>ENG</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/flag-kz.svg" alt="">
+                                    <span>KZ</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/heart-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/signal-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/basket-icon.svg" alt="">
+                            <span class="number">2</span>
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/user-icon.svg" alt="">
+                            <span>Войти</span>
+                        </a>
+                    </div>
+                    <div class="links mb">
+                        <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                        <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Menu -->
+        <section class="menu">
+            <div class="menu-head">
+                <div class="search-form">
+                    <input type="text" placeholder="Поиск">
+                    <button>
+                        <img src="./assets/images/zoom-icon.svg" alt="">
+                    </button>
+                </div>
+                <button class="menu-close">
+                    <img src="./assets/images/times.svg" alt="">
+                </button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content__head">
+                    <button class="catalog-btn">
+                        <span>Каталог</span>
+                        <img src="./assets/images/chevron-right.svg" alt="">
+                    </button>
+                    <ul class="menu-navs">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Производители</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-content__bottom">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/user-icon.svg" alt="">
+                                </span>
+                                <span>Вход/регистрация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/basket-icon.svg" alt="">
+                                </span>
+                                <span>Корзина</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/heart-icon.svg" alt="">
+                                </span>
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/signal-icon.svg" alt="">
+                                </span>
+                                <span>Сравнение товаров</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="links">
+                        <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                        <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn-red">Заказать звонок</a>
+                        <button class="lang-btn">
+                            <input type="text" value="RU" hidden>
+                            <img src="./assets/images/flag-ru.svg" alt="">
+                            <span>RU</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-catalog">
+                <button class="menu-catalog__close">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6665 8.5L3.99984 8.5M7.33317 12.5L3.80458 8.9714C3.54423 8.71106 3.54423 8.28894 3.80458 8.0286L7.33317 4.5" stroke="#999999" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>Назад</span>
+                </button>
+                <h3>Каталог</h3>
+                <ul>
+                    <li>
+                        <a href="#">AV-технологии</a>
+                    </li>
+                    <li>
+                        <a href="#">Активное оборудование</a>
+                    </li>
+                    <li>
+                        <a href="#">Беспроводные решения</a>
+                    </li>
+                    <li>
+                        <a href="#">Домофоны</a>
+                    </li>
+                    <li>
+                        <a href="#">Защита информации</a>
+                    </li>
+                    <li>
+                        <a href="#">Кабеленесущие системы</a>
+                    </li>
+                    <li>
+                        <a href="#">Кабель</a>
+                    </li>
+                    <li>
+                        <a href="#">Контроль и управление доступом</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Menu end -->
+
+        <section class="modal lang-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <button class="modal-close">
+                    <img src="./assets/images/times.svg" alt="">
+                </button>
+                <ul>
+                    <li>
+                        <img src="./assets/images/flag-ru.svg" alt="">
+                        <span>RU</span>
+                    </li>
+                    <li>
+                        <img src="./assets/images/flag-en.svg" alt="">
+                        <span>ENG</span>
+                    </li>
+                    <li>
+                        <img src="./assets/images/flag-kz.svg" alt="">
+                        <span>KZ</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <main>
+
+            <!-- Breadcrumb -->
+            <section class="breadcrumb">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                        <li>
+                            <span>Extron</span>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Breadcrumb end -->
+
+            <!-- New home -->
+            <section class="new-home">
+                <div class="container new-home__container">
+                    <div class="new-home__content">
+                        <h2 class="sec-title">
+                            Extron
+                            <span></span>
+                        </h2>
+                        <p>
+                            <b>Extron, США (Extron Electronics)</b> является мировым лидером по разработке и производству аналоговых и цифровых коммутационных систем по обработке и передаче аудио и видео информации. Она предлагает широкий ассортимент коммутаторов, процессоров, контроллеров, интерфейсов, преобразователей, распределительных усилителей и разнообразной кабельной продукции. 
+                        </p>
+                    </div>
+                    <img src="./assets/images/new-home-card-2.png" alt="" class="main-img__2">
+                </div>
+            </section>
+            <!-- New home end -->
+
+            <!-- Catalog block -->
+            <section class="catalog-block new-catalog">
+                <div class="container">
+                    <h2 class="sec-title">Каталог</h2>
+                    <div class="catalog-block__card-wrap">
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="text">
+                                    <a href="#">
+                                        <span>Архитектурные решения</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>Лючки AVEdge (19)</li>
+                                    <li>USB-модули для AV-подключений (15)</li>
+                                    <li>Flex55 (69)</li>
+                                    <li>Серия Cable Cubby (115)</li>
+                                    <li>Лючки поверхностного доступа серии Hideaway HSA (3)</li>
+                                    <li>Монтажные рамки для AV-подключений (58)</li>
+                                    <li>Настенные панели(16)</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="text">
+                                    <a href="#">
+                                        <span>Аудиооборудование Extron</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>Громкоговорители (7)</li>
+                                    <li>Устройства для деэмбедирования и эмбедирования аудио (2)</li>
+                                    <li>Микшеры и предусилители (5)</li>
+                                    <li>Коммутация и распределение (3)</li>
+                                    <li>Аксессуары (32)</li>
+                                    <li>Кабели и адаптеры для аудиооборудования (40)</li>
+                                    <li>Аудиопродукция DSP (18)</li>
+                                    <li>Серия AXI (8)</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="text">
+                                    <a href="#">
+                                        <span>Кабели в катушках и разъёмы</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>Оптоволоконные кабели в бухтах (2)</li>
+                                    <li>Разъемы и аксессуары для оптоволокна (2)</li>
+                                    <li>Кабели на витой паре (4)</li>
+                                    <li>Разъемы и аксессуары на витой паре (7)</li>
+                                    <li>Миникабели высокого разрешения MHR (2)</li>
+                                    <li>Обжимные разъемы и аксессуары (3)</li>
+                                    <li>Кабели для аудиосигналов громкоговорителей и сигналов управления (1)</li>
+                                    <li>Беспроводные устройства Extron</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="text">
+                                    <a href="#">
+                                        <span>Кабели и адаптеры</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>Кабели Show Me для TeamWork (19)</li>
+                                    <li>Цифровые кабели на витой паре (43)</li>
+                                    <li>Кабели для лючков и линейки Hideaway (45)</li>
+                                    <li>Оптоволоконные кабели (21)</li>
+                                    <li>Кабели и адаптеры USB Extron (17)</li>
+                                    <li>Кабели BNC - BNC (1)</li>
+                                    <li>Кабели VGA - VGA(11)</li>
+                                    <li>Блоки питания Extron</li>
+                                </ul>
+                                <button class="more-btn">
+                                    <img src="./assets/images/plus-icon.svg" alt="">
+                                    <span>Раскрыть</span>
+                                    <span>Скрыть</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="text">
+                                    <a href="#">
+                                        <span>Управление и автоматизация</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>ИК-пульты и панели управления (4)</li>
+                                    <li>Контроллеры MediaLink Plus (1)</li>
+                                    <li>Виртуальное управление (1)</li>
+                                    <li>Контроллеры рабочего пространства (1)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog-block__card">
+                            <div class="catalog-block__card-head">
+                                <div class="text">
+                                    <a href="#">
+                                        <span>Усилитель-распределитель</span>
+                                    </a>
+                                    <button>
+                                        <img src="./assets/images/chevron-down.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="catalog-block__card-body">
+                                <ul>
+                                    <li>Усилитель-распределитель HDMI(5)</li>
+                                    <li>Усилитель-распределитель DVI(3)</li>
+                                    <li>Усилитель-распределитель 12G(2)</li>
+                                    <li>Усилитель-распределитель VGA и RGB(2)</li>
+                                    <li>Усилитель-распределитель стандартного аудио и видео(2)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-link">
+                        <a href="#" class="btn-red">Вся продукция</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Catalog block end -->
+            
+            <!-- Extron -->
+            <section class="extron">
+                <div class="container extron-container">
+                    <h2 class="sec-title">Что предлагает Extron</h2>
+                    <div class="extron-content">
+                        <p class="description">Практически в любой сфере, где применяются аудио- и видео технологии, решения Extron играют ключевую роль, улучшая коммуникацию, способствуя обучению и облегчая совместную работу. Основу философии Extron составляют три ключевые концепции: готовые мультимедиа-решения, сервис и качественная поддержка.</p>
+                        <div>
+                            <h4>Благодаря широкому ассортименту продуктов, Extron предлагает оптимальные комплексные AV-решения, мультимедийное оборудование для любого проекта, включая:</h4>
+                            <ul class="list-1">
+                                <li>Конференц-залы и залы заседаний</li>
+                                <li>Больницы</li>
+                                <li>Помещения для брифингов</li>
+                                <li>Операционные</li>
+                                <li>Площадки для совместной работы</li>
+                                <li>Центры управления дорожным движением</li>
+                                <li>Центры брифингов для руководителей</li>
+                                <li>Центры управления запуском</li>
+                                <li>Учебные лекционные классы, залы</li>
+                                <li>Центры управления «Умными городами»</li>
+                                <li>Sim-лаборатории</li>
+                                <li>Центры производства и управления энергией</li>
+                                <li>Лаборатории моделирования и робототехники</li>
+                                <li>Военные и разведывательные операционные центры</li>
+                                <li>Залы виртуальной реальности</li>
+                                <li>Банкетные залы</li>
+                                <li>Исследовательские и испытательные лаборатории</li>
+                                <li>Выставочные залы</li>
+                                <li>Спортивные, тренажерные центры</li>
+                                <li>Гостиничные номера</li>
+                                <li>Центры киберспорта</li>
+                                <li>Рестораны</li>
+                                <li>Центры медицинского образования</li>
+                                <li>Достопримечательности, музейные центры</li>
+                                <li>Виртуальные анатомические лаборатории</li>
+                                <li>Развлекательные центры</li>
+                                <li>Медицинские учебные заведения</li>
+                                <li>Концертные залы</li>
+                            </ul>
+                        </div>
+                        <img src="./assets/images/extron-content-card-1.png" alt="" class="main-img">
+                        <ul class="list-2">
+                            <li class="description">Производственная линейка Extron включает свыше 2000 различных систем для комплексной организации аудио- и видеоконференций и различных медиа-проектов. Это позволяет оптимально реализовывать задачи любой степени сложности.</li>
+                            <li class="description">Extron является пионером инноваций в области аудиовизуальных технологий и имеет более 100 патентов на свои разработки. Компания располагает более 1000 инженерами, занимающимися проектированием, производством и поддержкой продуктов Extron. Обширные ресурсы для исследований, внедрения, тестирования и современные лаборатории позволяют Extron создавать передовые технологии, улучшающие производительность, эффективность и надежность аудиовизуального оборудования.</li>
+                            <li class="description">Компания ТопСети является дистрибьютором бренда Extron на территории России. Мы предлагаем широкий ассортимент высококачественного оборудования для создания аудио- и видеосистем. Наше сотрудничество с компанией Extron длится уже много лет, и за это время мы успешно завершили</li>
+                            <li class="description">множество крупных проектов для корпоративных и государственных клиентов. </li>
+                            <li class="description">Оборудование Extron известно своим превосходным качеством, надежностью и безопасностью. На европейском рынке нет аналогов, способных составить конкуренцию решениям Extron. В России оборудование такого уровня не производится.</li>
+                        </ul>
+                        <div class="block-1">
+                            <h4>
+                                Мы предлагаем купить российским покупателям аналоговую, цифровую технику Extron, проводные и беспроводные устройства, а также различные аксессуары и кабельную продукцию этого производителя. Цена на оборудование данного бренда может показаться довольно высокой, но мировая репутация, качество, надежность и долгосрочные гарантии быстро окупят ваши затраты. <br>
+                                В каталоге ТопСети представлен максимально полный ассортимент AV- устройств Extron:
+                            </h4>
+                            <ul class="list-1">
+                                <li>Интерфейсы</li>
+                                <li>Громкоговорители</li>
+                                <li>Переключатели</li>
+                                <li>Преобразователи</li>
+                                <li>Сенсорные панели</li>
+                                <li>Контроллеры и потоковое AV-оборудование</li>
+                                <li>Усилители мощности</li>
+                                <li>Кабельная продукция</li>
+                                <li>Процессоры, преобразователи</li>
+                                <li>Крепления для монтажа</li>
+                            </ul>
+                        </div>
+                        <p class="description">Это далеко не все, что можно найти в интернет-магазине ТопСети. Кроме этого, вы можете подобрать различные архитектурные решения для своих мультимедийных проектов и создания инновационных решений для своих бизнес-процессов.</p>
+                        <img src="./assets/images/extron-content-card-2.png" alt="" class="main-img">
+                        <h3>Где купить продукцию Extron</h3>
+                        <ul class="list-3">
+                            <li class="description">При выборе мультимедийного оборудования и кабелей для ИТ-инфраструктуры необходимо учитывать репутацию производителя и надёжность поставщика. Компания ТопСети, будучи одним из лидеров в области дистрибуции аудио- и видеосистем, предлагает продукты бренда Extron. Обладая более чем 15- летним опытом работы на рынке, наша компания предлагает выгодные условия, надежный сервис, широкий выбор продукции и консультации по вопросам поддержки решений Extron.</li>
+                            <li class="description">Поставляя оборудование напрямую от производителя, ТопСети предлагает доступные цены на продукцию Extron с доставкой в любую точку России. Выбирайте в нашем каталоге всё необходимое оборудование для создания современной многофункциональной мультимедийной инфраструктуры вашей корпоративной сети под ключ.</li>
+                        </ul>
+                        <div class="block-2">
+                            <h3>Сертификат</h3>
+                            <img src="./assets/images/certificate-1.png" alt="" class="certificate-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Extron end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-left">
+                    <a href="#" class="footer-logo">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <ul>
+                        <li><b>Компания ТопСети</b> — поставки по параллельному импорту оборудования ведущих мировых производителей: структурированные кабельные системы CommScope Systimax (США), AV-технологии Extron (США), сетевые решения Extreme Networks (США) и многих других.</li>
+                        <li><b>15 лет опыта:</b> поставляем IT-оборудование с 2009 года</li>
+                        <li>><b>50 производителей:</b> любое оборудование под ваш проект на выгодных условиях</li>
+                        <li>><b>3000 выполненных проектов:</b> комплексные решения для коммерческих организаций, банков, госведомств, операторов связи</li>
+                    </ul>
+                </div>
+                <div class="footer-navs">
+                    <div class="footer-navs__item">
+                        <h3>Бренды</h3>
+                        <ul>
+                            <li>
+                                <a href="#">CommScope</a>
+                            </li>
+                            <li>
+                                <a href="#">Systimax</a>
+                            </li>
+                            <li>
+                                <a href="#">Extron</a>
+                            </li>
+                            <li>
+                                <a href="#">Panduit</a>
+                            </li>
+                            <li>
+                                <a href="#">AESP</a>
+                            </li>
+                            <li>
+                                <a href="#">AMP</a>
+                            </li>
+                            <li>
+                                <a href="#">Legrand</a>
+                            </li>
+                            <li>
+                                <a href="#">Cavel</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs__item">
+                        <h3>Категории</h3>
+                        <ul>
+                            <li>
+                                <a href="#">AV-технологии</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабель</a>
+                            </li>
+                            <li>
+                                <a href="#">Структурированные кабельные системы</a>
+                            </li>
+                            <li>
+                                <a href="#">Шкафы и стойки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs__item">
+                        <h3>Полезное</h3>
+                        <ul>
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Производители</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Условия заказа</a>
+                            </li>
+                            <li>
+                                <a href="#">Дилерам</a>
+                            </li>
+                            <li>
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">Карта сайта</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Контакты</h3>
+                    <div class="footer-right__item">
+                        <div>
+                            <h4>Единый номер</h4>
+                            <a href="tel:8 (800) 555-70-57">8 (800) 555-70-57</a>
+                        </div>
+                        <div>
+                            <h4>Почта</h4>
+                            <a href="mailto:sales@topseti.ru" target="_blank">sales@topseti.ru</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Российская Федерация</h4>
+                        <a href="tel:+7 (495) 646-7057">+7 (495) 646-7057</a>
+                        <p>123308, г. Москва, ул. Мневники, дом 6</p>
+                    </div>
+                    <div>
+                        <h4>Республика Казахстан</h4>
+                        <a href="tel:+7 (747) 825-5907">+7 (747) 825-5907</a>
+                        <p>г. Астана, ул. Абылай Хана, д. 6/1</p>
+                    </div>
+                    <div>
+                        <h4>Объединенные Арабские Эмираты</h4>
+                        <a href="tel:+9 (715)-0828-6224">+9 (715)-0828-6224</a>
+                        <p>UAE, Dubai, JBR, Al Habtour Tower, office 100</p>
+                    </div>
+                    <div class="networks">
+                        <h4>Социальные сети</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-3.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-4.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn">Напишите нам</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2009-2024 «ТопСети»</p>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

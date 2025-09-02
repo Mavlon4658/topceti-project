@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-top">
+                    <a href="#" class="header-logo mb">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <ul class="header-navs">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Производители</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header-top__right">
+                        <div class="links">
+                            <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                            <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                        </div>
+                        <a href="#" class="btn-red">Заказать звонок</a>
+                        <button class="search-btn">
+                            <img src="./assets/images/zoom-icon.svg" alt="">
+                        </button>
+                        <a href="#" class="basket-link">
+                            <img src="./assets/images/basket-icon.svg" alt="">
+                            <span class="number">2</span>
+                        </a>
+                        <button class="bars">
+                            <img src="./assets/images/bars-black.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom__left">
+                        <a href="#" class="header-logo">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                        <div class="header-bottom__left-in">
+                            <div class="catalog-links__wrap">
+                                <button class="btn-red">
+                                    <img src="./assets/images/bars.svg" alt="">
+                                    <span>Каталог</span>
+                                </button>
+                                <ul class="catalog-links">
+                                    <li>
+                                        <a href="#" class="catalog-links__item">AV-технологии</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Активное оборудование</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Домофоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Защита информации</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Кабеленесущие системы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Кабель</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Контроль и управление доступом </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Охранное видеонаблюдение</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Полупроводники</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Светотехнические изделия</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Системы охранно-пожарной сигнализации</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Структурированные кабельные системы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Шкафы и стойки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Щитовое оборудование </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="catalog-links__item">Электротехническое оборудование</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search-form">
+                                <input type="text" placeholder="Поиск">
+                                <button>
+                                    <img src="./assets/images/zoom-icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-bottom__right">
+                        <div class="lang">
+                            <button class="lang-btn">
+                                <input type="text" value="RU" hidden>
+                                <img src="./assets/images/flag-ru.svg" alt="">
+                                <span>RU</span>
+                                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 1.20711L7.70711 6.5C7.31658 6.89053 6.68342 6.89052 6.29289 6.5L1 1.20711" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                            <ul class="lang-list">
+                                <li>
+                                    <img src="./assets/images/flag-ru.svg" alt="">
+                                    <span>RU</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/flag-en.svg" alt="">
+                                    <span>ENG</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/images/flag-kz.svg" alt="">
+                                    <span>KZ</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/heart-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/signal-icon.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/basket-icon.svg" alt="">
+                            <span class="number">2</span>
+                        </a>
+                        <a href="#" class="btn-grey">
+                            <img src="./assets/images/user-icon.svg" alt="">
+                            <span>Войти</span>
+                        </a>
+                    </div>
+                    <div class="links mb">
+                        <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                        <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Menu -->
+        <section class="menu">
+            <div class="menu-head">
+                <div class="search-form">
+                    <input type="text" placeholder="Поиск">
+                    <button>
+                        <img src="./assets/images/zoom-icon.svg" alt="">
+                    </button>
+                </div>
+                <button class="menu-close">
+                    <img src="./assets/images/times.svg" alt="">
+                </button>
+            </div>
+            <div class="menu-content">
+                <div class="menu-content__head">
+                    <button class="catalog-btn">
+                        <span>Каталог</span>
+                        <img src="./assets/images/chevron-right.svg" alt="">
+                    </button>
+                    <ul class="menu-navs">
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Производители</a>
+                        </li>
+                        <li>
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Прайс</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Дилерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-content__bottom">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/user-icon.svg" alt="">
+                                </span>
+                                <span>Вход/регистрация</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/basket-icon.svg" alt="">
+                                </span>
+                                <span>Корзина</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/heart-icon.svg" alt="">
+                                </span>
+                                <span>Избранное</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="./assets/images/signal-icon.svg" alt="">
+                                </span>
+                                <span>Сравнение товаров</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="links">
+                        <a href="tel:+7 (800) 555-70-57" class="links-phone">+7 (800) 555-70-57</a>
+                        <a href="mailto:sales@topseti.ru" target="_blank" class="links-email">sales@topseti.ru</a>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="btn-red">Заказать звонок</a>
+                        <button class="lang-btn">
+                            <input type="text" value="RU" hidden>
+                            <img src="./assets/images/flag-ru.svg" alt="">
+                            <span>RU</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-catalog">
+                <button class="menu-catalog__close">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6665 8.5L3.99984 8.5M7.33317 12.5L3.80458 8.9714C3.54423 8.71106 3.54423 8.28894 3.80458 8.0286L7.33317 4.5" stroke="#999999" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>Назад</span>
+                </button>
+                <h3>Каталог</h3>
+                <ul>
+                    <li>
+                        <a href="#">AV-технологии</a>
+                    </li>
+                    <li>
+                        <a href="#">Активное оборудование</a>
+                    </li>
+                    <li>
+                        <a href="#">Беспроводные решения</a>
+                    </li>
+                    <li>
+                        <a href="#">Домофоны</a>
+                    </li>
+                    <li>
+                        <a href="#">Защита информации</a>
+                    </li>
+                    <li>
+                        <a href="#">Кабеленесущие системы</a>
+                    </li>
+                    <li>
+                        <a href="#">Кабель</a>
+                    </li>
+                    <li>
+                        <a href="#">Контроль и управление доступом</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Menu end -->
+
+        <section class="modal lang-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <button class="modal-close">
+                    <img src="./assets/images/times.svg" alt="">
+                </button>
+                <ul>
+                    <li>
+                        <img src="./assets/images/flag-ru.svg" alt="">
+                        <span>RU</span>
+                    </li>
+                    <li>
+                        <img src="./assets/images/flag-en.svg" alt="">
+                        <span>ENG</span>
+                    </li>
+                    <li>
+                        <img src="./assets/images/flag-kz.svg" alt="">
+                        <span>KZ</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+        <main>
+
+            <!-- Breadcrumb -->
+            <section class="breadcrumb">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                        <li>
+                            <span>Заказ</span>
+                        </li>
+                        <li>
+                            <img src="./assets/images/arrow-right.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Breadcrumb end -->
+
+            <!-- New home -->
+            <section class="new-home">
+                <div class="container new-home__container">
+                    <div class="new-home__content">
+                        <h2 class="sec-title">
+                            Заказ
+                            <span></span>
+                        </h2>
+                        <p>
+                            Если перед размещением заказа на нашем сайте Вам требуется техническая консультация по техническим характеристикам оборудования, стоимости, срокам поставки — наши менеджеры в компании смогут быстро и квалифицированно решить эти задачи.
+                            <br><br>
+                            Мы не отвечаем за последствия ошибки в специфицировании, подборе оборудования, которое было добавлено Вами в заказ самостоятельно без технической консультации. Когда мы получаем Ваш заказ, мы считаем что Вы знаете, что заказываете, информация о продуктах размещена на сайте «ТопСети», сайтах производителей оборудования — это Ваш выбор, за который Вы отвечаете самостоятельно.
+                        </p>
+                    </div>
+                    <img src="./assets/images/new-home-card-1.png" alt="" class="main-img">
+                </div>
+            </section>
+            <!-- New home end -->
+
+            <!-- About order -->
+            <section class="about-order">
+                <div class="container about-order__container">
+                    <div class="about-order__card">
+                        <h2 class="sec-title__2">
+                            Правила работы компании
+                            <span></span>
+                        </h2>
+                        <ul class="text-1">
+                            <li>«ТопСети» работает с юридическими лицами, согласными с правилами работы «ТопСети».</li>
+                            <li>«ТопСети» преимущественно работает с письменными заявками, размещенными на сайте «ТопСети» через Формы заказа. Формы заказа отрабатываются в первую очередь.</li>
+                            <li>Но также Вы можете позвонить нам и наши менеджеры помогут составить Вам заказ. После получения размещенного запроса от Вас, наш менеджер свяжется с Вами для уточнения деталей заказа. «ТопСети» оставляет за собой право не отвечать на запросы, имеющие признаки получения информации для целей, не имеющих отношения к покупке товара, предлагаемого на сайте topseti.ru «ТопСети» не формирует коммерческие предложения и не участвует в тендерах.</li>
+                            <li>Вся информация о характеристиках товаров, размещенная на сайте «ТопСети», является актуальной.</li>
+                            <li>Все цены, размещенные на данном сайте, носят справочный характер и не являются публичной офертой. Пожалуйста, уточняйте актуальные цены у менеджеров компании.</li>
+                            <li>Оборудование, цена на которое указана в валюте, отличной от Российского рубля, оплачивается в рублях по курсу ЦБ РФ на день выставления счета. Актуальный курс ЦБ РФ Вы всегда можете найти внизу на странице нашего сайта.</li>
+                            <li>«ТопСети» гибко подходит к формированию условий продажи и готов обсуждать улучшение этих условий, но только с существующими партнерами и покупателями.</li>
+                            <li>Для выставления счета юридическому лицу должна быть полностью заполнена карточка с реквизитами компании, размещенная на сайте.</li>
+                        </ul>
+                    </div>
+                    <div class="about-order__card">
+                        <h2 class="sec-title__2">
+                            Ответы на часто задаваемые вопросы
+                            <span></span>
+                        </h2>
+                        <ul class="text-2">
+                            <li>
+                                <b>Сотрудничаете ли вы с физическими лицами?</b>
+                                <p>Нет, мы работаем только с компаниями и организациями.</p>
+                            </li>
+                            <li>
+                                <b>Поставляете ли вы IT-оборудование других производителей, которые не указаны на вашем сайте?</b>
+                                <p>Нет, мы работаем только с компаниями и организациями.</p>
+                            </li>
+                            <li>
+                                <b>Нужно ли покупателю самостоятельно заниматься вопросами таможенной очистки груза?</b>
+                                <p>Нет, мы предоставляем полностью растаможенное оборудование, которое доставляется прямо до офиса или склада заказчика.</p>
+                            </li>
+                            <li>
+                                <b>В какие города России вы осуществляете доставку?</b>
+                                <p>Мы осуществляем доставку по всей территории России.</p>
+                            </li>
+                            <li>
+                                <b>Какие данные нужно предоставить для расчета стоимости оборудования?</b>
+                                <p>Для расчета стоимости оборудования нам потребуется карточка компании и спецификация необходимого оборудования.</p>
+                            </li>
+                            <li>
+                                <b>Какими видами транспорта вы осуществляете доставку?</b>
+                                <p>У нас есть все основные виды транспорта: морской, воздушный и автомобильный.</p>
+                            </li>
+                            <li>
+                                <b>Какой примерный срок доставки оборудования?</b>
+                                <p>Если оборудование есть на складе за границей, то доставка авиацией займет 10-20 дней, морским транспортом - 40-60 дней.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- About order end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-left">
+                    <a href="#" class="footer-logo">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <ul>
+                        <li><b>Компания ТопСети</b> — поставки по параллельному импорту оборудования ведущих мировых производителей: структурированные кабельные системы CommScope Systimax (США), AV-технологии Extron (США), сетевые решения Extreme Networks (США) и многих других.</li>
+                        <li><b>15 лет опыта:</b> поставляем IT-оборудование с 2009 года</li>
+                        <li>><b>50 производителей:</b> любое оборудование под ваш проект на выгодных условиях</li>
+                        <li>><b>3000 выполненных проектов:</b> комплексные решения для коммерческих организаций, банков, госведомств, операторов связи</li>
+                    </ul>
+                </div>
+                <div class="footer-navs">
+                    <div class="footer-navs__item">
+                        <h3>Бренды</h3>
+                        <ul>
+                            <li>
+                                <a href="#">CommScope</a>
+                            </li>
+                            <li>
+                                <a href="#">Systimax</a>
+                            </li>
+                            <li>
+                                <a href="#">Extron</a>
+                            </li>
+                            <li>
+                                <a href="#">Panduit</a>
+                            </li>
+                            <li>
+                                <a href="#">AESP</a>
+                            </li>
+                            <li>
+                                <a href="#">AMP</a>
+                            </li>
+                            <li>
+                                <a href="#">Legrand</a>
+                            </li>
+                            <li>
+                                <a href="#">Cavel</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs__item">
+                        <h3>Категории</h3>
+                        <ul>
+                            <li>
+                                <a href="#">AV-технологии</a>
+                            </li>
+                            <li>
+                                <a href="#">Кабель</a>
+                            </li>
+                            <li>
+                                <a href="#">Структурированные кабельные системы</a>
+                            </li>
+                            <li>
+                                <a href="#">Шкафы и стойки</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs__item">
+                        <h3>Полезное</h3>
+                        <ul>
+                            <li>
+                                <a href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a href="#">Производители</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Условия заказа</a>
+                            </li>
+                            <li>
+                                <a href="#">Дилерам</a>
+                            </li>
+                            <li>
+                                <a href="#">Вакансии</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">Карта сайта</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h3>Контакты</h3>
+                    <div class="footer-right__item">
+                        <div>
+                            <h4>Единый номер</h4>
+                            <a href="tel:8 (800) 555-70-57">8 (800) 555-70-57</a>
+                        </div>
+                        <div>
+                            <h4>Почта</h4>
+                            <a href="mailto:sales@topseti.ru" target="_blank">sales@topseti.ru</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Российская Федерация</h4>
+                        <a href="tel:+7 (495) 646-7057">+7 (495) 646-7057</a>
+                        <p>123308, г. Москва, ул. Мневники, дом 6</p>
+                    </div>
+                    <div>
+                        <h4>Республика Казахстан</h4>
+                        <a href="tel:+7 (747) 825-5907">+7 (747) 825-5907</a>
+                        <p>г. Астана, ул. Абылай Хана, д. 6/1</p>
+                    </div>
+                    <div>
+                        <h4>Объединенные Арабские Эмираты</h4>
+                        <a href="tel:+9 (715)-0828-6224">+9 (715)-0828-6224</a>
+                        <p>UAE, Dubai, JBR, Al Habtour Tower, office 100</p>
+                    </div>
+                    <div class="networks">
+                        <h4>Социальные сети</h4>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-3.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/network-icon-4.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn">Напишите нам</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>© 2009-2024 «ТопСети»</p>
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
