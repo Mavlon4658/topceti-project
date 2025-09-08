@@ -331,3 +331,27 @@ if (catalogCard.length) {
         }
     })
 }
+
+const catalogLinks = document.querySelectorAll('.header .catalog-links__item');
+const catalogLinksItem = document.querySelectorAll('.header .catalog-links__right');
+if (catalogLinks.length) {
+    catalogLinks.forEach((link, linkID) => {
+        link.onclick = e => {
+            e.preventDefault();
+            catalogLinksItem.forEach((item, itemID) => {
+                if (linkID == itemID) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            })
+            catalogLinks.forEach((item, itemID) => {
+                if (linkID == itemID) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            })
+        }
+    })
+}
