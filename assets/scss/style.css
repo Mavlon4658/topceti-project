@@ -911,6 +911,20 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 1050px) {
   .header.fixed .header-top {
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .header.fixed .header-top__right .links {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .header.fixed .header-top__right .btn-red {
     display: none;
   }
 }
@@ -2662,6 +2676,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 64px;
+  overflow: hidden;
 }
 .about-card {
   display: flex;
@@ -2868,6 +2883,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .new-home__container {

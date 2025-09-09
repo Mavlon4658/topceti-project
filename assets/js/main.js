@@ -126,7 +126,6 @@ if (accordion.length) {
 
         const checkboxList = item.querySelector('.accordion-body ul');
         const showBtn = item.querySelector('.accordion-body a.more-btn');
-        console.log(showBtn);
 
         if (checkboxList && showBtn) {
             showBtn.onclick = e => {

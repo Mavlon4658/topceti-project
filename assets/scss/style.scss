@@ -940,7 +940,26 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 margin: 0;
 
                 @include media(-1050) {
-                    display: none;
+                    border-bottom: 1px solid #E0E0E0;
+                    margin-bottom: 12px;
+                    padding-bottom: 12px;
+                }
+
+                &__right {
+
+                    .links {
+                        @include media(-1050) {
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 16px;
+                        }
+                    }
+
+                    .btn-red {
+                        @include media(-1050) {
+                            display: none;
+                        }
+                    }
                 }
             }
 
@@ -2940,6 +2959,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-direction: column;
         gap: 64px;
+        overflow: hidden;
     }
 
     &-card {
@@ -3160,6 +3180,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         align-items: center;
         justify-content: space-between;
         gap: 40px;
+        overflow: hidden;
 
         @include media(768) {
             flex-direction: column;
