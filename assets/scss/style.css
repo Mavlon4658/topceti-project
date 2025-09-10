@@ -882,10 +882,14 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .header .catalog-links__right.active {
   display: grid;
 }
-.header .catalog-links__right h4 {
+.header .catalog-links__right .link-title {
   font-weight: 700;
   font-size: 16px;
   color: #121212;
+  transition: 0.2s ease-in-out al;
+}
+.header .catalog-links__right .link-title:hover {
+  color: #B10002;
 }
 .header .catalog-links__right ul {
   margin-top: 16px;
@@ -893,18 +897,28 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   gap: 8px;
 }
-.header .catalog-links__right ul a {
+.header .catalog-links__right ul a:not(.link-title) {
   font-weight: 400;
   font-size: 14px;
   color: #121212;
   transition: 0.2s ease-in-out al;
 }
-.header .catalog-links__right ul a:hover {
+.header .catalog-links__right ul a:not(.link-title):hover {
   color: #B10002;
 }
 .header.fixed {
   position: fixed;
   box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.1);
+}
+.header.fixed .lang-btn {
+  font-size: 14px;
+  color: #7D7D7D;
+}
+.header.fixed .lang-btn img {
+  width: 20px;
+}
+.header.fixed .header-navs a {
+  color: #7D7D7D;
 }
 .header.fixed .header-top {
   margin: 0;
@@ -923,6 +937,13 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     gap: 16px;
   }
 }
+.header.fixed .header-top__right .links .links-phone {
+  font-size: 14px;
+  margin: 0;
+}
+.header.fixed .header-top__right .links .links-email {
+  font-size: 14px;
+}
 @media screen and (min-width: 1050px) {
   .header.fixed .header-top__right .btn-red {
     display: none;
@@ -932,6 +953,10 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   .header.fixed .header-bottom {
     display: none;
   }
+}
+.header.fixed .nav-dropdown__btn {
+  font-size: 14px;
+  color: #7D7D7D;
 }
 
 .breadcrumb {
@@ -2647,6 +2672,12 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 .catalog-block.new-catalog .catalog-block__card ul:not(.active) li:nth-child(n+6) {
   display: none;
+}
+.catalog-block.new-catalog .catalog-block__card a {
+  transition: 0.2s ease-in-out all;
+}
+.catalog-block.new-catalog .catalog-block__card a:hover {
+  color: #C91517;
 }
 .catalog-block.new-catalog .more-link {
   display: flex;

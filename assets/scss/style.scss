@@ -905,10 +905,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 display: grid; 
             }
 
-            h4 {
+            .link-title {
                 font-weight: 700;
                 font-size: 16px;
                 color: #121212;
+                transition: .2s ease-in-out al;
+
+                &:hover {
+                    color: #B10002;
+                }
             }
 
             ul {
@@ -917,7 +922,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 flex-direction: column;
                 gap: 8px;
 
-                a {
+                a:not(.link-title) {
                     font-weight: 400;
                     font-size: 14px;
                     color: #121212;
@@ -935,7 +940,24 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         position: fixed;
         box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 10%);
 
+        .lang {
+            &-btn {
+                font-size: 14px;
+                color: #7D7D7D;
+
+                img {
+                    width: 20px;
+                }
+            }
+        }
+
         .header {
+            &-navs {
+                a {
+                    color: #7D7D7D;
+                }
+            }
+
             &-top {
                 margin: 0;
 
@@ -953,6 +975,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                             align-items: center;
                             gap: 16px;
                         }
+
+                        .links-phone {
+                            font-size: 14px;
+                            margin: 0;
+                        }
+
+                        .links-email {
+                            font-size: 14px;
+                        }
                     }
 
                     .btn-red {
@@ -967,6 +998,13 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 @include media(1050) {
                     display: none;
                 }
+            }
+        }
+
+        .nav-dropdown {
+            &__btn {
+                font-size: 14px;
+                color: #7D7D7D;
             }
         }
     }
@@ -2925,6 +2963,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 &:not(.active) li:nth-child(n+6) {
                     display: none;
                 } 
+
+            }
+
+            a {
+                transition: .2s ease-in-out all;
+                
+                &:hover {
+                    color: #C91517;
+                }
             }
         }
 

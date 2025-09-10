@@ -352,5 +352,22 @@ if (catalogLinks.length) {
                 }
             })
         }
+
+        link.addEventListener('mouseover', function () {
+            catalogLinksItem.forEach((item, itemID) => {
+                if (linkID == itemID) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            })
+            catalogLinks.forEach((item, itemID) => {
+                if (linkID == itemID) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            })
+        })
     })
 }
