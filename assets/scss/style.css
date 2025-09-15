@@ -861,7 +861,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .header .catalog-links__left::-webkit-scrollbar {
-  width: 6px;
+  width: 3px;
 }
 .header .catalog-links__left::-webkit-scrollbar-thumb {
   background: #C91517;
@@ -927,6 +927,18 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 .header .catalog-links__right ul a:not(.link-title):hover {
   color: #B10002;
+}
+@media (max-height: 980px) {
+  .header .catalog-links {
+    min-height: 650px;
+    height: 650px;
+  }
+}
+@media (max-height: 785px) {
+  .header .catalog-links {
+    min-height: 550px;
+    height: 550px;
+  }
 }
 .header.fixed {
   position: fixed;

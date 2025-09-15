@@ -876,7 +876,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             }
 
             &::-webkit-scrollbar {
-                width: 6px;
+                width: 3px;
             }
 
             &::-webkit-scrollbar-thumb {
@@ -955,6 +955,16 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     }
                 }
             }
+        }
+
+        @media (max-height: 980px) {
+            min-height: 650px;
+            height: 650px;
+        }
+
+        @media (max-height: 785px) {
+            min-height: 550px;
+            height: 550px;
         }
     }
 
