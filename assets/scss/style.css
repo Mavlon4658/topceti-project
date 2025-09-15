@@ -804,16 +804,16 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .header .catalog-links__wrap .red_catalog_btn img:nth-child(2) {
   display: none;
 }
-.header .catalog-links__wrap .red_catalog_btn.active {
+.header .catalog-links__wrap:hover {
   position: relative;
 }
-.header .catalog-links__wrap .red_catalog_btn.active img {
+.header .catalog-links__wrap:hover img {
   display: none;
 }
-.header .catalog-links__wrap .red_catalog_btn.active img:nth-child(2) {
+.header .catalog-links__wrap:hover img:nth-child(2) {
   display: block;
 }
-.header .catalog-links__wrap .red_catalog_btn.active::before {
+.header .catalog-links__wrap:hover::before {
   content: "";
   position: absolute;
   left: 0;
@@ -822,6 +822,9 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background: transparent;
   opacity: 0;
+}
+.header .catalog-links__wrap:hover .catalog-links {
+  display: flex;
 }
 .header .catalog-links__item {
   width: 100%;

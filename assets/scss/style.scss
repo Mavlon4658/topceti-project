@@ -807,31 +807,34 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 img:nth-child(2) {
                     display: none;
                 }
-
-                &.active {
-                    position: relative;
-
-                    img {
-                        display: none;
-
-                        &:nth-child(2) {
-                            display: block;
-                        }
-                    }
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        left: 0;
-                        bottom: -8px;
-                        height: 8px;
-                        width: 100%;
-                        background: transparent;
-                        opacity: 0;
-                    }
-                }
             }
 
+            &:hover {
+                position: relative;
+
+                img {
+                    display: none;
+
+                    &:nth-child(2) {
+                        display: block;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -8px;
+                    height: 8px;
+                    width: 100%;
+                    background: transparent;
+                    opacity: 0;
+                }
+
+                .catalog-links {
+                    display: flex;
+                }
+            }
         }
 
         &__item {
