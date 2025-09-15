@@ -199,7 +199,7 @@ if (likeBtns.length) {
 
 const changeViewMode = (mode = 0) => {
     const card = document.querySelector('.home-cards');
-    
+
     if (mode == 1) {
         card.classList.add('active');
         card.querySelectorAll('.product-card').forEach(el => {
@@ -246,7 +246,7 @@ if (modalCls.length) {
         const modalOpenBtns = document.querySelectorAll(`${cls}__open`);
         const modalCloseBtn = document.querySelector(`${cls} .modal-close`);
         const modalBg = document.querySelector(`${cls} .modal-bg`);
-    
+
         const modalClose = () => {
             bodyVisible();
             modal.classList.remove('active');
@@ -255,7 +255,7 @@ if (modalCls.length) {
                 modal.classList.remove('end-active');
             }, 400);
         }
-    
+
         if (modalOpenBtns.length) {
             modalOpenBtns.forEach(btn => {
                 btn.onclick = e => {
@@ -265,15 +265,15 @@ if (modalCls.length) {
                 }
             })
         }
-    
+
         if (modalCloseBtn) {
             modalCloseBtn.onclick = () => modalClose();
         }
-    
+
         if (modalBg) {
             modalBg.onclick = () => modalClose();
         }
-    
+
     })
 }
 // modals end
@@ -295,7 +295,7 @@ const watchedSwp = new Swiper('.watched .swiper', {
         1050: {
             spaceBetween: 32,
             slidesPerView: 4,
-        }, 
+        },
         900: {
             slidesPerView: 4,
         },
@@ -323,7 +323,7 @@ if (catalogCard.length) {
                 moreBtn.classList.toggle('active');
             }
         }
-        
+
         accBtn.onclick = () => {
             accBody.classList.toggle('active');
             accBtn.classList.toggle('active');
@@ -371,3 +371,24 @@ if (catalogLinks.length) {
         })
     })
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const catalogBtn = document.querySelector(".red_catalog_btn");
+  const catalogLinks = document.querySelector(".catalog-links");
+
+  if (catalogBtn && catalogLinks) {
+    catalogBtn.addEventListener("click", () => {
+      catalogBtn.classList.toggle("active");
+      catalogLinks.classList.toggle("active");
+    });
+
+    const links = catalogLinks.querySelectorAll("a");
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        catalogBtn.classList.remove("active");
+        catalogLinks.classList.remove("active");
+      });
+    });
+  }
+});

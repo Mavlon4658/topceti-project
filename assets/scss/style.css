@@ -775,6 +775,10 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   display: none;
   align-items: center;
 }
+.header .catalog-links.active {
+  display: flex;
+  align-items: start;
+}
 @media screen and (max-width: 1050px) {
   .header .catalog-links {
     display: none !important;
@@ -786,7 +790,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     overflow-y: scroll;
   }
   .header .catalog-links::-webkit-scrollbar {
-    width: 4px;
+    width: 2px;
     border-radius: 4px;
   }
   .header .catalog-links::-webkit-scrollbar-thumb {
@@ -797,19 +801,19 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .header .catalog-links__wrap {
   position: relative;
 }
-.header .catalog-links__wrap .btn-red img:nth-child(2) {
+.header .catalog-links__wrap .red_catalog_btn img:nth-child(2) {
   display: none;
 }
-.header .catalog-links__wrap:hover .btn-red {
+.header .catalog-links__wrap .red_catalog_btn.active {
   position: relative;
 }
-.header .catalog-links__wrap:hover .btn-red img {
+.header .catalog-links__wrap .red_catalog_btn.active img {
   display: none;
 }
-.header .catalog-links__wrap:hover .btn-red img:nth-child(2) {
+.header .catalog-links__wrap .red_catalog_btn.active img:nth-child(2) {
   display: block;
 }
-.header .catalog-links__wrap:hover .btn-red::before {
+.header .catalog-links__wrap .red_catalog_btn.active::before {
   content: "";
   position: absolute;
   left: 0;
@@ -818,9 +822,6 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
   background: transparent;
   opacity: 0;
-}
-.header .catalog-links__wrap:hover .catalog-links {
-  display: flex;
 }
 .header .catalog-links__item {
   width: 100%;
@@ -852,6 +853,21 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .header .catalog-links__left {
   width: 364px;
   flex-shrink: 0;
+  height: 100%;
+}
+@media (max-height: 980px) {
+  .header .catalog-links__left {
+    overflow-y: scroll;
+  }
+}
+.header .catalog-links__left::-webkit-scrollbar {
+  width: 6px;
+}
+.header .catalog-links__left::-webkit-scrollbar-thumb {
+  background: #C91517;
+}
+.header .catalog-links__left::-webkit-scrollbar-track {
+  background: #E4E4E4;
 }
 .header .catalog-links__right {
   width: 100%;
@@ -864,6 +880,12 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   gap: 32px;
   background: #f5f5f5;
   overflow-y: auto;
+  padding-bottom: 20px;
+}
+@media (max-height: 980px) {
+  .header .catalog-links__right {
+    height: 100%;
+  }
 }
 .header .catalog-links__right::-webkit-scrollbar {
   width: 6px;
@@ -919,6 +941,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 .header.fixed .header-navs a {
   color: #7D7D7D;
+  font-size: 14px;
 }
 .header.fixed .header-top {
   margin: 0;
@@ -957,6 +980,18 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .header.fixed .nav-dropdown__btn {
   font-size: 14px;
   color: #7D7D7D;
+}
+@media (max-height: 980px) {
+  .header.fixed .catalog-links {
+    min-height: 650px;
+    height: 650px;
+  }
+}
+@media (max-height: 785px) {
+  .header.fixed .catalog-links {
+    min-height: 550px;
+    height: 550px;
+  }
 }
 
 .breadcrumb {

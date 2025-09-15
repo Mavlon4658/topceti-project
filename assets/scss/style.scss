@@ -151,7 +151,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             align-items: center;
             justify-content: center;
             margin-bottom: 16px;
-        
+
             &::before {
                 content: '';
                 position: absolute;
@@ -164,7 +164,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 background: #d9d9d9;
                 border-radius: 4px;
             }
-        
+
             .line {
                 height: 4px;
                 width: 100%;
@@ -177,13 +177,13 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 border-radius: 4px;
             }
         }
-    
+
         &__val {
             display: flex;
             align-items: stretch;
             width: 100%;
             gap: 16px;
-        
+
             &_item {
                 width: 50%;
                 display: flex;
@@ -192,7 +192,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 z-index: 1;
                 background: #F5F5F5;
                 border-radius: 8px;
-        
+
                 span {
                     font-size: 14px;
                     line-height: 20px;
@@ -203,7 +203,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     transform: translateY(-50%);
                     z-index: -1;
                 }
-        
+
                 .val {
                     font-size: 14px;
                     line-height: 20px;
@@ -213,7 +213,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 }
             }
         }
-    
+
         svg,
         input[type='range']:not(.val) {
             position: absolute;
@@ -232,23 +232,23 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         input[type='number']::-webkit-inner-spin-button {
             -webkit-appearance: none;
         }
-    
+
         input[type='range']:focus {
             outline: none;
         }
-    
+
         input[type='range']:focus::-webkit-slider-runnable-track {
             background: transparent;
         }
-    
+
         input[type='range']:focus::-ms-fill-lower {
             background: transparent;
         }
-    
+
         input[type='range']:focus::-ms-fill-upper {
             background: transparent;
         }
-    
+
         input[type='range']::-webkit-slider-runnable-track {
             width: 100%;
             height: 5px;
@@ -259,7 +259,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             box-shadow: none;
             border: 0;
         }
-    
+
         input[type='range']::-webkit-slider-thumb {
             border: 0;
             height: 24px;
@@ -275,7 +275,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             margin-top: -9.5px;
             cursor: pointer;
         }
-    
+
         input[type='range']::-webkit-slider-thumb,
         input[type='range']::-webkit-slider-thumb {
             &:active,
@@ -293,7 +293,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             box-shadow: none;
             border: 0;
         }
-    
+
         input[type='range']::-moz-range-thumb {
             z-index: 2;
             position: relative;
@@ -308,7 +308,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             background: #C91517;
             cursor: pointer;
         }
-    
+
         input[type='range']::-ms-track {
             width: 100%;
             height: 5px;
@@ -318,7 +318,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             border-color: transparent;
             color: transparent;
         }
-    
+
         input[type='range']::-ms-fill-lower,
         input[type='range']::-ms-fill-upper {
             background: transparent;
@@ -326,7 +326,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             box-shadow: none;
             border: 0;
         }
-    
+
         input[type='range']::-ms-thumb {
             z-index: 2;
             position: relative;
@@ -404,7 +404,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
 .nav-dropdown {
     position: relative;
-    
+
     &__btn {
         font-weight: 400;
         font-size: 16px;
@@ -434,14 +434,14 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             height: 13px;
             background: transparent;
         }
-        
+
         a {
             width: 100%;
             padding: 9px 24px;
             font-weight: 400;
             font-size: 16px;
             color: #121212;
-            
+
             &:hover {
                 color: #B10002;
                 background: #f5f5f5;
@@ -528,7 +528,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     display: none;
                 }
             }
-            
+
             .search-btn {
                 flex-shrink: 0;
 
@@ -536,7 +536,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     display: none;
                 }
             }
-            
+
             .basket-link {
                 flex-shrink: 0;
                 width: 48px;
@@ -583,7 +583,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     display: none;
                 }
             }
-            
+
         }
     }
 
@@ -776,6 +776,11 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         display: none;
         align-items: center;
 
+        &.active {
+            display: flex;
+            align-items: start;
+        }
+
         @include media(1050) {
             display: none !important;
         }
@@ -785,7 +790,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             overflow-y: scroll;
 
             &::-webkit-scrollbar {
-                width: 4px;
+                width: 2px;
                 border-radius: 4px;
             }
 
@@ -798,19 +803,17 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         &__wrap {
             position: relative;
 
-            .btn-red {
+            .red_catalog_btn {
                 img:nth-child(2) {
                     display: none;
                 }
-            }
 
-            &:hover {
-                .btn-red {
+                &.active {
                     position: relative;
 
                     img {
                         display: none;
-                        
+
                         &:nth-child(2) {
                             display: block;
                         }
@@ -827,11 +830,8 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                         opacity: 0;
                     }
                 }
+            }
 
-                .catalog-links {
-                    display: flex;
-                }
-            } 
         }
 
         &__item {
@@ -843,7 +843,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
+
             img {
                 opacity: 0;
                 transition: .2s ease-in-out all;
@@ -869,6 +869,23 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         &__left {
             width: 364px;
             flex-shrink: 0;
+            height: 100%;
+
+            @media (max-height: 980px) {
+                overflow-y: scroll;
+            }
+
+            &::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #C91517;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #E4E4E4;
+            }
         }
 
         &__right {
@@ -882,6 +899,11 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             gap: 32px;
             background: #f5f5f5;
             overflow-y: auto;
+            padding-bottom: 20px;
+
+            @media (max-height: 980px) {
+                height: 100%;
+            }
 
             &::-webkit-scrollbar {
                 width: 6px;
@@ -902,7 +924,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             }
 
             &.active {
-                display: grid; 
+                display: grid;
             }
 
             .link-title {
@@ -955,6 +977,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             &-navs {
                 a {
                     color: #7D7D7D;
+                    font-size: 14px;
                 }
             }
 
@@ -1005,6 +1028,18 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             &__btn {
                 font-size: 14px;
                 color: #7D7D7D;
+            }
+        }
+
+        .catalog-links {
+            @media (max-height: 980px) {
+                min-height: 650px;
+                height: 650px;
+            }
+
+            @media (max-height: 785px) {
+                min-height: 550px;
+                height: 550px;
             }
         }
     }
@@ -1527,7 +1562,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                         gap: 8px;
                         margin-bottom: 16px;
 
-                        
+
                         &:not(.active) {
                             li:nth-child(n+6) {
                                 display: none !important;
@@ -1895,7 +1930,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             flex-direction: row;
             padding: 8px 16px 8px 8px;
             min-height: inherit;
-    
+
             .like-btn {
                 top: auto;
                 right: auto;
@@ -1904,13 +1939,13 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 width: 24px;
                 height: 24px;
                 border-radius: 0;
-    
+
                 img {
                     width: 100%;
                     height: auto;
                 }
             }
-    
+
             .signal-btn {
                 position: absolute;
                 bottom: 16px;
@@ -1919,28 +1954,28 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 align-items: center;
                 justify-content: center;
             }
-    
+
             .product-card {
                 &__head {
                     flex-direction: row;
                     align-items: flex-start;
-    
+
                     .main-img {
                         width: 144px;
                         height: 144px;
                         flex-shrink: 0;
                     }
-    
+
                     &-text {
                         width: 100%;
                         max-width: 445px;
                     }
                 }
-    
+
                 &__article {
                     display: flex;
                 }
-    
+
                 &__title {
                     font-weight: 600;
                     font-size: 18px;
@@ -1950,53 +1985,53 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-    
+
                 &__foot {
                     flex-direction: column;
                     align-items: flex-end;
                     justify-content: center;
                 }
-    
+
                 &__price {
                     font-size: 24px;
                 }
             }
-    
+
             .basket-btn {
                 width: 185px;
-    
+
                 img {
                     display: none;
                 }
-    
+
                 span {
                     display: block;
                 }
             }
         }
-    
+
         &.list {
             flex-direction: row;
             min-height: inherit;
-    
+
             .product-card {
                 &__head {
                     flex-direction: row;
-    
+
                     .main-img {
                         display: none;
                     }
-    
+
                     &-text {
                         display: flex;
                         align-items: center;
                     }
                 }
-    
+
                 &__foot {
                     flex-shrink: 0;
                 }
-    
+
                 &__article {
                     display: flex;
                     flex-direction: column;
@@ -2004,12 +2039,12 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     flex-shrink: 0;
                     font-size: 14px;
                     gap: 0px;
-    
+
                     span {
                         margin-bottom: -2px;
                     }
                 }
-    
+
                 &__title {
                     font-size: 14px;
                     max-width: 349px;
@@ -2020,14 +2055,14 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-    
+
                 &__price {
                     font-size: 16px;
                     padding-right: 16px;
                     text-align: right;
                 }
             }
-    
+
             .like-btn {
                 position: static;
                 width: 24px;
@@ -2035,7 +2070,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 border-radius: 0;
                 background: transparent;
             }
-    
+
             .signal-btn {
                 display: flex;
                 align-items: center;
@@ -2043,15 +2078,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 width: 24px;
                 height: 24px;
             }
-    
+
             .basket-btn {
                 width: 185px;
                 margin-left: 16px;
-    
+
                 svg, img {
                     display: none;
                 }
-    
+
                 span {
                     display: block;
                 }
@@ -2071,7 +2106,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         display: flex;
         align-items: center;
         gap: 9px;
-        
+
         a {
             width: 48px;
             height: 48px;
@@ -2194,20 +2229,20 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     user-select: none;
                     gap: 16px;
                 }
-        
+
                 &-body {
                     padding: 16px 0 0 16px;
                     display: flex;
                     flex-direction: column;
                     gap: 16px;
-        
+
                     li {
                         justify-content: space-between;
                         gap: 8px;
-        
+
                         p {
                             font-size: 16px;
-                            
+
                             span {
                                 color: #999999;
                                 display: inline;
@@ -2215,15 +2250,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                             }
                         }
                     }
-        
+
                     ul {
                         display: flex;
                         flex-direction: column;
                         gap: 12px;
-        
+
                         li {
                             flex-direction: row-reverse;
-        
+
                         }
 
                         &:not(.active) {
@@ -2232,7 +2267,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                             }
                         }
                     }
-        
+
                     a {
                         color: #999999;
                         font-size: 14px;
@@ -2249,13 +2284,13 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     }
                 }
             }
-        
+
             h3 {
                 font-size: 18px;
                 font-weight: bold;
                 margin: 40px 0 16px;
             }
-        
+
             .form_range {
                 margin-bottom: 32px;
             }
@@ -2412,7 +2447,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         @include media(800) {
             width: 100%;
         }
-        
+
         .form-group {
             display: flex;
             flex-direction: column;
@@ -2732,7 +2767,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 flex-direction: row;
                 gap: 0;
                 margin-bottom: 24px;
-                
+
                 div {
                     width: 50%;
                 }
@@ -2770,7 +2805,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     }
                 }
             }
-            
+
             .btn {
                 width: 100%;
                 width: 139px;
@@ -2795,7 +2830,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 // Catalog block
 .catalog-block {
     margin-bottom: 65px;
-    
+
     @include media(1050) {
         margin-bottom: 56px;
     }
@@ -2912,7 +2947,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
                 &:not(.active) li:nth-child(n+9) {
                     display: none;
-                } 
+                }
             }
 
             .more-btn {
@@ -2962,13 +2997,13 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             ul {
                 &:not(.active) li:nth-child(n+6) {
                     display: none;
-                } 
+                }
 
             }
 
             a {
                 transition: .2s ease-in-out all;
-                
+
                 &:hover {
                     color: #C91517;
                 }
@@ -3217,7 +3252,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 // New home
 .new-home {
     padding: 30px 0 65px;
-    
+
     @include media(992) {
         padding: 0 0 56px;
     }
@@ -3384,7 +3419,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 // About order end
 
-// Extron 
+// Extron
 .extron {
     margin-bottom: 80px;
 
@@ -3485,7 +3520,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         font-weight: 700;
         font-size: 32px;
         line-height: 140%;
-        
+
         @include media(992) {
             font-size: 24px;
         }
@@ -3605,7 +3640,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             font-size: 16px;
             color: #121212;
             max-width: 370px;
-            
+
             @include media(992) {
                 max-width: 100%;
             }
