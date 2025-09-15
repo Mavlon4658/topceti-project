@@ -544,7 +544,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .header-top__right .search-btn {
   flex-shrink: 0;
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1051px) {
   .header-top__right .search-btn {
     display: none;
   }
@@ -558,7 +558,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   position: relative;
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1051px) {
   .header-top__right .basket-link {
     display: none;
   }
@@ -590,7 +590,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   width: 48px;
   height: 48px;
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1051px) {
   .header-top__right .bars {
     display: none;
   }
